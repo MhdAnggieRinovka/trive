@@ -9,6 +9,7 @@ export interface Product {
   category: ProductCategory
   description: string
   price: string
+  priceValue?: number
   image: string
   tag?: string
   gallery?: string[]
