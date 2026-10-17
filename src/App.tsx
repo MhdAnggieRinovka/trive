@@ -17,7 +17,7 @@ function App() {
   const visibleProducts = useMemo(() => {
     const filtered = products.filter((p) => (category === 'Semua' || p.category === category) && [p.name, p.brand, p.category].some((v) => v.toLowerCase().includes(search.toLowerCase().trim())))
     if (sort === 'name') return [...filtered].sort((a, b) => a.name.localeCompare(b.name))
-    if (sort === 'price') return [...filtered].sort((a, b) => Number(a.price.replace(/\D/g, '')) - Number(b.price.replace(/\D/g, '')))
+    if (sort === 'price') return [...filtered].sort((a, b) => (a.priceValue ?? Number.POSITIVE_INFINITY) - (b.priceValue ?? Number.POSITIVE_INFINITY))
     return filtered
   }, [category, search, sort])
 
