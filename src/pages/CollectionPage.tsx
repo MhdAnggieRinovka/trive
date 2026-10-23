@@ -3,6 +3,7 @@ import { ProductCard } from '../components/ProductCard'
 
 interface CollectionPageProps {
   title: string
+  titleEmphasis: string
   intro: string
   category?: ProductCategory
   products: Product[]
@@ -14,7 +15,7 @@ interface CollectionPageProps {
   onNavigate: (path: string) => void
 }
 
-export function CollectionPage({ title, intro, category, products, search, sort, layout, onSortChange, onLayoutChange, onNavigate }: CollectionPageProps) {
+export function CollectionPage({ title, titleEmphasis, intro, category, products, search, sort, layout, onSortChange, onLayoutChange, onNavigate }: CollectionPageProps) {
   const visibleProducts = products
     .filter((product) => (!category || product.category === category) && [product.name, product.brand, product.category, product.description].some((value) => value.toLowerCase().includes(search.trim().toLowerCase())))
     .sort((a, b) => {
@@ -30,7 +31,7 @@ export function CollectionPage({ title, intro, category, products, search, sort,
     <section className="collection-section collection-page">
       <div className="collection-page-intro">
         <p className="eyebrow"><span className="eyebrow-line" /> KOLEKSI TRIVE</p>
-        <h1>{title.split('|')[0]} {title.includes('|') && <em>{title.split('|')[1]}</em>}</h1>
+        <h1>{title} <em>{titleEmphasis}</em></h1>
         <p>{intro}</p>
       </div>
       <div className="section-heading collection-page-heading">
