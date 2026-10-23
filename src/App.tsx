@@ -59,7 +59,8 @@ function App() {
     const isAllProducts = pathname === '/products'
     page = (
       <CollectionPage
-        title={isAllProducts ? 'Semua | pilihan' : currentCategory === 'Parfum' ? 'Aroma | berkarakter.' : currentCategory === 'Tas' ? 'Teman gaya | harian.' : 'Pilihan | vape.'}
+        title={isAllProducts ? 'Semua' : currentCategory === 'Parfum' ? 'Aroma' : currentCategory === 'Tas' ? 'Teman gaya' : 'Pilihan'}
+        titleEmphasis={isAllProducts ? 'pilihan' : currentCategory === 'Parfum' ? 'berkarakter.' : currentCategory === 'Tas' ? 'harian.' : 'vape.'}
         intro={isAllProducts
           ? 'Jelajahi semua pilihan lifestyle yang sedang dikurasi oleh TRIVE.'
           : currentCategory === 'Parfum'
