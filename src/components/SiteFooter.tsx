@@ -1,9 +1,12 @@
+import type { MouseEvent } from 'react'
+
 interface SiteFooterProps {
   onNavigate: (path: string) => void
 }
 
 export function SiteFooter({ onNavigate }: SiteFooterProps) {
-  const follow = (event: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+  const follow = (event: MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return
     event.preventDefault()
     onNavigate(path)
   }
