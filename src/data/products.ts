@@ -393,7 +393,7 @@ export const products: Product[] = [
     priceNote: 'Harga pada toko online resmi Zara Indonesia saat riset.',
     priceSourceUrl: 'https://www.zara.com/id/id/go-fruity-edt-90ml--3-04-fl--oz---p20120692.html',
     detailsSourceUrl: 'https://www.zara.com/id/id/go-fruity-edt-90ml--3-04-fl--oz---p20120692.html',
-  },,
+  },
   {
     id: 'fendi-brown-embossed-top-handle',
     name: 'Brown Embossed Top Handle Handbag',
