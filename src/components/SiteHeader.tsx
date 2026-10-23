@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import type { Category } from '../types/product'
-
+import { useState, type MouseEvent } from 'react'
 interface SiteHeaderProps {
   currentPath: string
   dark: boolean
@@ -10,11 +8,11 @@ interface SiteHeaderProps {
   onSearchChange: (value: string) => void
 }
 
-const navItems: { label: string; path: string; category?: Category }[] = [
-  { label: 'Semua produk', path: '/products', category: 'Semua' },
-  { label: 'Parfum', path: '/parfum', category: 'Parfum' },
-  { label: 'Tas', path: '/tas', category: 'Tas' },
-  { label: 'Vape', path: '/vape', category: 'Vape' },
+const navItems: { label: string; path: string }[] = [
+  { label: 'Semua produk', path: '/products' },
+  { label: 'Parfum', path: '/parfum' },
+  { label: 'Tas', path: '/tas' },
+  { label: 'Vape', path: '/vape' },
   { label: 'Tentang TRIVE', path: '/about' },
 ]
 
@@ -24,7 +22,8 @@ export function SiteHeader({ currentPath, dark, search, onNavigate, onToggleThem
   const isAbout = currentPath === '/about'
   const isHome = currentPath === '/'
 
-  const follow = (event: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+  const follow = (event: MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return
     event.preventDefault()
     setMenuOpen(false)
     onNavigate(path)
