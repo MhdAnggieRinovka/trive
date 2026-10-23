@@ -125,8 +125,8 @@ h1 em, h2 em { font-family: 'Playfair Display', serif; font-weight: 500; }
 .modal-backdrop { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 20px; background: #0009; overflow-y: auto; }
 .product-modal { position: relative; display: grid; grid-template-columns: 1fr 1fr; width: min(760px, 100%); max-height: 90vh; overflow-y: auto; background: var(--bg); color: var(--text); }
 .modal-close { position: absolute; top: 12px; right: 12px; z-index: 1; background: var(--bg); }
-.modal-image { min-height: 360px; background: var(--surface); }
-.modal-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.modal-image { min-width: 0; min-height: 360px; padding: 16px; display: flex; align-items: center; justify-content: center; background: var(--surface); }
+.modal-image img { display: block; width: auto; max-width: 100%; height: auto; max-height: min(70vh, 640px); object-fit: contain; }
 .modal-content { padding: 42px 30px 30px; }
 .modal-content .eyebrow { margin-bottom: 30px; }
 .modal-content h2 { font-family: 'Playfair Display', serif; font-size: 31px; font-weight: 500; margin: 9px 0 15px; }
@@ -189,20 +189,25 @@ h1 em, h2 em { font-family: 'Playfair Display', serif; font-weight: 500; }
   }
 
   .modal-image {
+    width: 100%;
     height: auto;
     min-height: 0;
-    aspect-ratio: 4 / 3;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
+    aspect-ratio: auto;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
   }
 
   .modal-image img {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: min(42dvh, 360px);
     object-fit: contain;
-    padding: 10px;
+    padding: 0;
   }
 
   .modal-close {
