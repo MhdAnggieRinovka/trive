@@ -24,4 +24,10 @@ export interface Product {
   priceNote?: string
   priceSourceUrl?: string
   detailsSourceUrl?: string
+  dimensions?: string
+  material?: string
+  bagStyle?: string
+  closure?: string
+  strap?: string
+  color?: string
 }
