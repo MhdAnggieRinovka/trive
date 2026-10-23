@@ -11,6 +11,21 @@ export function ProductDetailPage({ product, onNavigate }: ProductDetailPageProp
     { label: 'Heart notes', values: product.heartNotes },
     { label: 'Base notes', values: product.baseNotes },
   ]
+  const facts = product.category === 'Tas'
+    ? [
+        { label: 'Ukuran', value: product.dimensions ?? 'Belum dikonfirmasi' },
+        { label: 'Material', value: product.material ?? 'Belum dikonfirmasi' },
+        { label: 'Model tas', value: product.bagStyle ?? 'Belum teridentifikasi' },
+        { label: 'Penutup', value: product.closure ?? 'Belum dikonfirmasi' },
+        { label: 'Tali', value: product.strap ?? 'Belum dikonfirmasi' },
+        { label: 'Warna', value: product.color ?? 'Belum dirinci' },
+      ]
+    : [
+        { label: 'Isi / ukuran', value: product.volume ?? 'Belum dikonfirmasi' },
+        { label: 'Konsentrasi', value: product.concentration ?? 'Belum dikonfirmasi' },
+        { label: 'Karakter aroma', value: product.scentFamily ?? 'Belum dirinci' },
+        { label: 'Kategori pemakaian', value: product.gender ?? 'Belum dirinci' },
+      ]
 
   return (
     <section className="product-detail-page">
@@ -31,10 +46,7 @@ export function ProductDetailPage({ product, onNavigate }: ProductDetailPageProp
           <p className="price-reference-note">{product.priceNote ?? 'Harga referensi online; harga jual final TRIVE dan ketersediaan perlu dikonfirmasi.'}</p>
 
           <dl className="product-detail-facts">
-            <div><dt>Isi / ukuran</dt><dd>{product.volume ?? 'Belum dikonfirmasi'}</dd></div>
-            <div><dt>Konsentrasi</dt><dd>{product.concentration ?? 'Belum dikonfirmasi'}</dd></div>
-            <div><dt>Karakter aroma</dt><dd>{product.scentFamily ?? 'Belum dirinci'}</dd></div>
-            <div><dt>Kategori pemakaian</dt><dd>{product.gender ?? 'Belum dirinci'}</dd></div>
+            {facts.map((fact) => <div key={fact.label}><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}
           </dl>
 
           {noteGroups.some((group) => group.values?.length) && (
@@ -49,10 +61,10 @@ export function ProductDetailPage({ product, onNavigate }: ProductDetailPageProp
           )}
           {product.occasion && <p className="product-detail-occasion"><strong>Saran pemakaian:</strong> {product.occasion}</p>}
           <div className="detail-source-links">
-            {product.detailsSourceUrl && <a href={product.detailsSourceUrl} target="_blank" rel="noreferrer">Detail aroma ↗</a>}
+            {product.detailsSourceUrl && <a href={product.detailsSourceUrl} target="_blank" rel="noreferrer">{product.category === 'Tas' ? 'Detail produk ↗' : 'Detail aroma ↗'}</a>}
             {product.priceSourceUrl && <a href={product.priceSourceUrl} target="_blank" rel="noreferrer">Referensi harga ↗</a>}
           </div>
-          <div className="detail-note"><span>✳</span><p>Gambar katalog merupakan visual AI, bukan bukti foto barang aktual. Pastikan nama varian, ukuran, kemasan, penjual, dan stok sebelum menetapkan harga jual.</p></div>
+          <div className="detail-note"><span>✳</span><p>Gambar katalog merupakan visual AI, bukan foto barang aktual. Verifikasi model, bahan, ukuran, kondisi, keaslian, dan harga barang sebelum dipublikasikan.</p></div>
           <button className="button button-dark product-detail-back" onClick={() => onNavigate(`/${product.category.toLowerCase()}`)}>Kembali ke {product.category.toLowerCase()} <span>↗</span></button>
         </article>
       </div>
