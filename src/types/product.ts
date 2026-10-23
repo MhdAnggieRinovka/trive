@@ -13,4 +13,15 @@ export interface Product {
   image: string
   tag?: string
   gallery?: string[]
+  volume?: string
+  concentration?: string
+  gender?: string
+  scentFamily?: string
+  topNotes?: string[]
+  heartNotes?: string[]
+  baseNotes?: string[]
+  occasion?: string
+  priceNote?: string
+  priceSourceUrl?: string
+  detailsSourceUrl?: string
 }
