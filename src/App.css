@@ -769,3 +769,51 @@ select:focus-visible {
     padding: 70px 5% 90px;
   }
 }
+
+
+/* Keep grid/list product browsing inside its own vertical scroll area.
+   Carousel keeps its existing horizontal scrolling behavior. */
+.collection-page .product-layout.layout-grid,
+.collection-page .product-layout.layout-list {
+  max-height: min(68vh, 720px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  align-content: start;
+  overscroll-behavior-y: contain;
+  padding: 2px 12px 22px 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--surface);
+}
+
+.collection-page .product-layout.layout-grid::-webkit-scrollbar,
+.collection-page .product-layout.layout-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.collection-page .product-layout.layout-grid::-webkit-scrollbar-track,
+.collection-page .product-layout.layout-list::-webkit-scrollbar-track {
+  background: var(--surface);
+  border-radius: 99px;
+}
+
+.collection-page .product-layout.layout-grid::-webkit-scrollbar-thumb,
+.collection-page .product-layout.layout-list::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 99px;
+}
+
+.collection-page .product-layout.layout-carousel {
+  max-height: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-right: 0;
+}
+
+@media (max-width: 760px) {
+  .collection-page .product-layout.layout-grid,
+  .collection-page .product-layout.layout-list {
+    max-height: min(60dvh, 560px);
+    padding-right: 8px;
+    padding-bottom: 18px;
+  }
+}
