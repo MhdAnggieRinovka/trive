@@ -33,7 +33,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
         <button className="modal-close icon-button" onClick={onClose} aria-label="Tutup detail">×</button>
         <div className="modal-image"><img src={product.image} alt={product.name} /></div>
         <div className="modal-content">
-          <p className="eyebrow">{product.category.toUpperCase()} · TRIVE EDIT</p>
+          <p className="eyebrow">{product.category.toUpperCase()} · JADE DISTRICT EDIT</p>
           <p className="product-brand">{product.brand}</p>
           <h2 id="modal-title">{product.name}</h2>
           <p className="modal-description">{product.description}</p>
