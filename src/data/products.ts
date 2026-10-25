@@ -1,10 +1,11 @@
 import type { Category, Product } from '../types/product'
 
 /**
- * Katalog parfum berdasarkan aset yang ada di public/products/parfum.
- * Harga adalah referensi listing online Indonesia saat riset, bukan harga jual final TRIVE.
+ * Katalog produk TRIVE yang ditautkan ke aset di public/products.
+ * Harga numerik yang sudah ada adalah referensi listing saat riset, bukan harga jual final TRIVE.
+ * Produk baru tanpa harga memakai placeholder "Harga belum ditentukan" sampai harga jual dipilih.
  * Aset gambar dibuat dengan AI; nama/volume pada visual bukan bukti bahwa varian fisik persis sama.
- * Periksa ukuran, konsentrasi, penjual dan stok sebelum menetapkan harga jual.
+ * Verifikasi varian fisik, ukuran, konsentrasi, stok, dan harga sebelum dipublikasikan.
  */
 export const products: Product[] = [
   {
