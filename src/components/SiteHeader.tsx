@@ -13,7 +13,7 @@ const navItems: { label: string; path: string }[] = [
   { label: 'Parfum', path: '/parfum' },
   { label: 'Tas', path: '/tas' },
   { label: 'Vape', path: '/vape' },
-  { label: 'Tentang TRIVE', path: '/about' },
+  { label: 'Tentang JADE DISTRICT', path: '/about' },
 ]
 
 export function SiteHeader({ currentPath, dark, search, onNavigate, onToggleTheme, onSearchChange }: SiteHeaderProps) {
@@ -33,14 +33,16 @@ export function SiteHeader({ currentPath, dark, search, onNavigate, onToggleThem
     <>
       <div className="announcement">
         <span>Pilihan lifestyle yang dikurasi dengan cermat</span>
-        <span>Temukan pilihan TRIVE ↗</span>
+        <span>Temukan pilihan JADE DISTRICT ↗</span>
       </div>
       <header className="site-header">
         <button className="icon-button mobile-menu" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Tutup menu' : 'Buka menu'} aria-expanded={menuOpen}>
           {menuOpen ? '×' : '☰'}
         </button>
-        <a className="wordmark" href="/" onClick={(event) => follow(event, '/')}>
-          TRIVE<span>®</span><small>CURATED LIFESTYLE GOODS</small>
+        <a className="wordmark" href="/" onClick={(event) => follow(event, '/')} aria-label="JADE DISTRICT, 玉境, beranda">
+          <span className="wordmark-name">JADE DISTRICT</span>
+          <span className="brand-chinese" lang="zh-Hans">玉境</span>
+          <small>CURATED LIFESTYLE GOODS</small>
         </a>
         <nav className={'main-nav ' + (menuOpen ? 'nav-open' : '')} aria-label="Navigasi utama">
           {navItems.map((item) => {
