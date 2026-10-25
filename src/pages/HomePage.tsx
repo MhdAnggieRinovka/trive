@@ -28,8 +28,8 @@ export function HomePage({ featuredProducts, totalProducts, onNavigate }: HomePa
           <div className="hero-footnote"><span>✳</span> PILIHAN BERMAKNA, TANPA BERLEBIHAN.</div>
         </div>
         <div className="hero-visual">
-          <img className="hero-image" src="/products/parfum/Davidoff%20Cool%20Water%20by%20Wet%20Stone.png" alt="Davidoff Cool Water dalam foto editorial" />
-          <div className="hero-image-caption"><span>THE ART OF EVERYDAY</span><span>01 — 03</span></div>
+          <img className="hero-image" src="/products/parfum/Davidoff%20Cool%20Water%20by%20Wet%20Stone.png" alt="Davidoff Cool Water, pilihan parfum JADE DISTRICT" />
+          <div className="hero-image-caption"><span>DAVIDOFF COOL WATER</span><span>FRAGRANCE · FEATURED</span></div>
           <div className="floating-note"><span className="note-star">✳</span><span>CURATED<br />WITH INTENTION</span></div>
         </div>
         <div className="hero-index">01 / KOLEKSI PILIHAN</div>
