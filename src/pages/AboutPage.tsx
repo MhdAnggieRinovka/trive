@@ -8,7 +8,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
       <section className="about-hero">
         <p className="eyebrow"><span className="eyebrow-line" /> TENTANG JADE DISTRICT</p>
         <h1>Lebih sedikit distraksi.<br /><em>Lebih banyak makna.</em></h1>
-        <p>JADE DISTRICT adalah katalog pilihan lifestyle untuk orang yang menghargai karakter, detail, dan pilihan yang terasa personal.</p>
+        <p>JADE DISTRICT adalah katalog lifestyle untuk orang yang menghargai karakter, detail, dan pilihan yang terasa personal—mulai dari fashion, tas, parfum, hingga perangkat vape.</p>
       </section>
 
       <section className="about-story">
@@ -18,7 +18,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           <h2>Your style.<br /><em>Your signature.</em></h2>
         </div>
         <div className="about-story-body">
-          <p>JADE DISTRICT mempertemukan pilihan yang melengkapi gaya personal: aroma yang mudah diingat, tas yang selalu ingin dibawa, dan detail yang berbicara tanpa berlebihan.</p>
+          <p>JADE DISTRICT mempertemukan pilihan yang melengkapi gaya personal: fashion dan tas, aroma yang mudah diingat, serta perangkat lifestyle yang dipilih dengan cermat.</p>
           <p>Kami percaya pengalaman menemukan produk seharusnya terasa sederhana dan menyenangkan. Karena itu, koleksi disajikan dengan fokus pada karakter produk dan informasi yang dapat ditinjau sebelum kamu menentukan pilihan.</p>
         </div>
       </section>
