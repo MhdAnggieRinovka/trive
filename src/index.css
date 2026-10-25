@@ -7,5 +7,5 @@
 * { box-sizing: border-box; }
 body { margin: 0; min-width: 320px; }
 button, input, select { font: inherit; }
-button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #b6a27d; outline-offset: 3px; }
-::selection { background: #c6b18a; color: #282720; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #7e9271; outline-offset: 3px; }
+::selection { background: #b8c9a8; color: #203026; }
