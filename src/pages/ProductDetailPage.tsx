@@ -37,7 +37,7 @@ export function ProductDetailPage({ product, onNavigate }: ProductDetailPageProp
       <div className="product-detail-layout">
         <div className="product-detail-visual"><img src={product.image} alt={product.name} /></div>
         <article className="product-detail-copy">
-          <p className="eyebrow"><span className="eyebrow-line" /> {product.category.toUpperCase()} · TRIVE EDIT</p>
+          <p className="eyebrow"><span className="eyebrow-line" /> {product.category.toUpperCase()} · JADE DISTRICT EDIT</p>
           <p className="product-brand">{product.brand}</p>
           <h1>{product.name}</h1>
           {product.tag && <span className="detail-product-tag">{product.tag}</span>}
