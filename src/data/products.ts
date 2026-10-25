@@ -1,8 +1,8 @@
 import type { Category, Product } from '../types/product'
 
 /**
- * Katalog produk TRIVE yang ditautkan ke aset di public/products.
- * Harga numerik yang sudah ada adalah referensi listing saat riset, bukan harga jual final TRIVE.
+ * Katalog produk JADE DISTRICT yang ditautkan ke aset di public/products.
+ * Harga numerik yang sudah ada adalah referensi listing saat riset, bukan harga jual final JADE DISTRICT.
  * Produk baru tanpa harga memakai placeholder "Harga belum ditentukan" sampai harga jual dipilih.
  * Aset gambar dibuat dengan AI; nama/volume pada visual bukan bukti bahwa varian fisik persis sama.
  * Verifikasi varian fisik, ukuran, konsentrasi, stok, dan harga sebelum dipublikasikan.
@@ -413,7 +413,7 @@ export const products: Product[] = [
     heartNotes: ['Blackcurrant', 'Raspberry'],
     baseNotes: ['Musk', 'Orange', 'Amber'],
     occasion: 'Aktivitas harian, siang hari, dan suasana santai.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
     detailsSourceUrl: 'https://afnan.com/products/9-am-pour-femme',
   },
   {
@@ -433,7 +433,7 @@ export const products: Product[] = [
     heartNotes: ['Rosemary', 'Sage', 'Geranium'],
     baseNotes: ['Incense', 'Patchouli'],
     occasion: 'Kantor, acara malam, dan pemakaian ketika menginginkan aroma segar yang berkarakter.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'afnan-9pm',
@@ -452,7 +452,7 @@ export const products: Product[] = [
     heartNotes: ['Muguet', 'Orange blossom'],
     baseNotes: ['Patchouli', 'Amber', 'Vanilla', 'Tonka bean'],
     occasion: 'Malam hari, kencan, dan acara spesial.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
     detailsSourceUrl: 'https://afnan.com/products/9-pm',
   },
   {
@@ -469,7 +469,7 @@ export const products: Product[] = [
     gender: 'Belum dikonfirmasi',
     scentFamily: 'Belum teridentifikasi',
     occasion: 'Detail pemakaian disesuaikan setelah varian parfum dikonfirmasi.',
-    priceNote: 'Nama varian dan harga jual TRIVE belum dikonfirmasi.',
+    priceNote: 'Nama varian dan harga jual JADE DISTRICT belum dikonfirmasi.',
   },
   {
     id: 'coach-blue-edt',
@@ -488,7 +488,7 @@ export const products: Product[] = [
     heartNotes: ['Ozonic accord', 'Black pepper'],
     baseNotes: ['Cedarwood', 'Amber'],
     occasion: 'Harian, kantor, dan aktivitas luar ruangan.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'givenchy-blue-label',
@@ -507,7 +507,7 @@ export const products: Product[] = [
     heartNotes: ['Pepper', 'Cardamom'],
     baseNotes: ['Cedarwood', 'Vetiver'],
     occasion: 'Harian, kantor, dan suasana kasual.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'armaf-club-de-nuit-intense-man',
@@ -526,7 +526,7 @@ export const products: Product[] = [
     heartNotes: ['Birch', 'Jasmine', 'Rose'],
     baseNotes: ['Musk', 'Ambergris', 'Patchouli', 'Vanilla'],
     occasion: 'Acara malam, pertemuan, dan saat menginginkan aroma yang kuat.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'giorgio-armani-code-profumo',
@@ -545,7 +545,7 @@ export const products: Product[] = [
     heartNotes: ['Orange blossom', 'Nutmeg'],
     baseNotes: ['Tonka bean', 'Amber', 'Leather accord'],
     occasion: 'Malam hari, acara formal, dan momen spesial.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'marc-jacobs-daisy-eau-so-fresh-paradise',
@@ -564,7 +564,7 @@ export const products: Product[] = [
     heartNotes: ['Floral notes', 'Oak accords'],
     baseNotes: ['Ambroxan'],
     occasion: 'Siang hari, aktivitas santai, dan penggunaan harian.',
-    priceNote: 'Harga jual TRIVE belum ditentukan; varian dan ukuran perlu dicocokkan dengan produk fisik.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan; varian dan ukuran perlu dicocokkan dengan produk fisik.',
   },
   {
     id: 'coach-dreams',
@@ -583,7 +583,7 @@ export const products: Product[] = [
     heartNotes: ['Gardenia', 'Cactus flower'],
     baseNotes: ['Joshua tree accord', 'Woody notes'],
     occasion: 'Harian, jalan-jalan, dan suasana santai.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'xerjoff-erba-pura',
@@ -602,7 +602,7 @@ export const products: Product[] = [
     heartNotes: ['Mediterranean fruit accords'],
     baseNotes: ['Amber', 'Madagascar vanilla', 'White musk'],
     occasion: 'Harian hingga malam hari untuk penggemar aroma buah yang menonjol.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
     detailsSourceUrl: 'https://www.xerjoff.com/products/erba-pura-eau-de-parfum',
   },
   {
@@ -622,7 +622,7 @@ export const products: Product[] = [
     heartNotes: ['Apple', 'Geranium', 'Sage'],
     baseNotes: ['Vanilla', 'Amber', 'Cedarwood', 'Sandalwood', 'Patchouli'],
     occasion: 'Harian, kencan, dan acara malam.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'versace-eros-energy',
@@ -641,7 +641,7 @@ export const products: Product[] = [
     heartNotes: ['Pink pepper', 'White amber', 'Blackcurrant'],
     baseNotes: ['Musk', 'Oakmoss', 'Patchouli'],
     occasion: 'Siang hari, cuaca hangat, dan aktivitas luar ruangan.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'coach-floral',
@@ -660,7 +660,7 @@ export const products: Product[] = [
     heartNotes: ['Gardenia', 'Jasmine sambac', 'Rose tea'],
     baseNotes: ['Musk', 'Patchouli', 'Woody notes'],
     occasion: 'Harian, bekerja, dan acara semi-formal.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'viktor-rolf-flowerbomb',
@@ -679,7 +679,7 @@ export const products: Product[] = [
     heartNotes: ['Orchid', 'Jasmine', 'Rose', 'Freesia'],
     baseNotes: ['Patchouli', 'Musk'],
     occasion: 'Acara spesial, malam hari, dan pemakaian saat ingin aroma floral yang menonjol.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'zara-gardenia',
@@ -717,7 +717,7 @@ export const products: Product[] = [
     heartNotes: ['Ylang-ylang', 'Floral notes'],
     baseNotes: ['Vanilla', 'Tonka bean'],
     occasion: 'Kencan, acara spesial, dan pemakaian malam hari.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'creed-green-irish-tweed',
@@ -736,7 +736,7 @@ export const products: Product[] = [
     heartNotes: ['Violet leaf'],
     baseNotes: ['Sandalwood', 'Ambergris'],
     occasion: 'Kantor, acara formal, dan penggunaan harian yang rapi.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'carolina-herrera-la-bomba',
@@ -755,7 +755,7 @@ export const products: Product[] = [
     heartNotes: ['Red peony', 'Red frangipani'],
     baseNotes: ['Solar vanilla', 'Patchouli'],
     occasion: 'Malam hari, pesta, dan acara spesial.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'lattafa-yara-candy',
@@ -774,7 +774,7 @@ export const products: Product[] = [
     heartNotes: ['Strawberry fizz candy', 'Gardenia'],
     baseNotes: ['Vanilla syrup', 'Amber', 'Sandalwood', 'Musk'],
     occasion: 'Harian, jalan-jalan, dan suasana santai.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'parfums-de-marly-layton',
@@ -793,7 +793,7 @@ export const products: Product[] = [
     heartNotes: ['Lavender', 'Violet', 'Geranium'],
     baseNotes: ['Patchouli', 'Vanilla', 'Guaiacwood', 'Praline'],
     occasion: 'Acara formal, malam hari, dan momen spesial.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
     detailsSourceUrl: 'https://parfums-de-marly.com/products/layton',
   },
   {
@@ -813,7 +813,7 @@ export const products: Product[] = [
     heartNotes: ['Rose', 'Peony'],
     baseNotes: ['Vanilla', 'Musk'],
     occasion: 'Harian, siang hari, dan suasana santai.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'dior-midnight-poison',
@@ -832,7 +832,7 @@ export const products: Product[] = [
     heartNotes: ['Rose', 'Jasmine'],
     baseNotes: ['Vanilla', 'Patchouli', 'Musk'],
     occasion: 'Malam hari dan acara spesial.',
-    priceNote: 'Harga jual TRIVE belum ditentukan; varian dan ukuran perlu dicocokkan dengan produk fisik.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan; varian dan ukuran perlu dicocokkan dengan produk fisik.',
   },
   {
     id: 'rabanne-million-gold-for-her',
@@ -851,7 +851,7 @@ export const products: Product[] = [
     heartNotes: ['Jasmine', 'Ylang-ylang', 'White flowers'],
     baseNotes: ['Mineral musk', 'Moss', 'Vanilla'],
     occasion: 'Acara spesial dan pemakaian siang atau malam.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
     detailsSourceUrl: 'https://www.rabanne.com/ww/en/fragrance/p/million-gold-for-her--000000000065200302',
   },
   {
@@ -871,7 +871,7 @@ export const products: Product[] = [
     heartNotes: ['Tuberose', 'Jasmine'],
     baseNotes: ['Vanilla', 'White musk', 'Cedarwood'],
     occasion: 'Harian, acara semi-formal, dan momen spesial.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'armaf-odyssey-dubai-chocolat',
@@ -890,7 +890,7 @@ export const products: Product[] = [
     heartNotes: ['Chocolate accord', 'Spices'],
     baseNotes: ['Vanilla', 'Woody notes'],
     occasion: 'Malam hari dan penggemar aroma manis-gourmand.',
-    priceNote: 'Harga jual TRIVE belum ditentukan; profil notes perlu diverifikasi terhadap produk fisik.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan; profil notes perlu diverifikasi terhadap produk fisik.',
   },
   {
     id: 'louis-vuitton-ombre-nomade',
@@ -909,7 +909,7 @@ export const products: Product[] = [
     heartNotes: ['Rose', 'Oud', 'Incense'],
     baseNotes: ['Benzoin', 'Amber accords'],
     occasion: 'Malam hari, acara formal, dan momen spesial.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'zara-orchid',
@@ -925,7 +925,7 @@ export const products: Product[] = [
     gender: 'Wanita',
     scentFamily: 'Floral · Soft Sweet',
     occasion: 'Harian, siang hari, dan suasana santai.',
-    priceNote: 'Harga jual TRIVE belum ditentukan; ukuran dan varian perlu dikonfirmasi.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan; ukuran dan varian perlu dikonfirmasi.',
   },
   {
     id: 'prada-paradigme-man',
@@ -944,7 +944,7 @@ export const products: Product[] = [
     heartNotes: ['Geranium'],
     baseNotes: ['Guaiac wood', 'Musk'],
     occasion: 'Penggunaan harian, kantor, dan acara formal.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'kate-spade-pop',
@@ -963,7 +963,7 @@ export const products: Product[] = [
     heartNotes: ['Floral notes'],
     baseNotes: ['Musk', 'Woody notes'],
     occasion: 'Harian, aktivitas santai, dan acara kasual.',
-    priceNote: 'Profil aroma disajikan secara umum; harga jual TRIVE belum ditentukan.',
+    priceNote: 'Profil aroma disajikan secara umum; harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'givenchy-pour-homme',
@@ -982,7 +982,7 @@ export const products: Product[] = [
     heartNotes: ['Vetiver', 'Davana'],
     baseNotes: ['Cedarwood', 'Incense'],
     occasion: 'Kantor, kegiatan harian, dan acara semi-formal.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'zara-red-vanilla-intense',
@@ -1001,7 +1001,7 @@ export const products: Product[] = [
     heartNotes: ['Floral notes'],
     baseNotes: ['Amber', 'Musk'],
     occasion: 'Harian hingga malam hari untuk penggemar aroma manis yang hangat.',
-    priceNote: 'Harga jual TRIVE belum ditentukan; ukuran dan varian perlu dikonfirmasi.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan; ukuran dan varian perlu dikonfirmasi.',
   },
   {
     id: 'jean-paul-gaultier-scandal',
@@ -1020,7 +1020,7 @@ export const products: Product[] = [
     heartNotes: ['Gardenia', 'Honey accord'],
     baseNotes: ['Patchouli', 'Caramel accord'],
     occasion: 'Malam hari, pesta, kencan, dan acara spesial.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'salvatore-ferragamo-signorina',
@@ -1039,7 +1039,7 @@ export const products: Product[] = [
     heartNotes: ['Jasmine', 'Rose', 'Peony'],
     baseNotes: ['Musk', 'Patchouli', 'Panna cotta accord'],
     occasion: 'Harian, kencan, dan acara semi-formal.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'kate-spade-sparkle',
@@ -1055,7 +1055,7 @@ export const products: Product[] = [
     gender: 'Wanita',
     scentFamily: 'Soft · Floral · Sweet',
     occasion: 'Harian, suasana santai, dan penggunaan siang hari.',
-    priceNote: 'Profil aroma disajikan secara umum; harga jual TRIVE belum ditentukan.',
+    priceNote: 'Profil aroma disajikan secara umum; harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'hugo-boss-the-scent-for-her',
@@ -1074,7 +1074,7 @@ export const products: Product[] = [
     heartNotes: ['Osmanthus'],
     baseNotes: ['Roasted cocoa accord'],
     occasion: 'Kencan, acara spesial, dan penggunaan sore hingga malam.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
   {
     id: 'ysl-libre-edp',
@@ -1093,7 +1093,7 @@ export const products: Product[] = [
     heartNotes: ['Orange blossom', 'Jasmine'],
     baseNotes: ['Vanilla', 'Musk'],
     occasion: 'Harian, kerja, dan acara malam.',
-    priceNote: 'Harga jual TRIVE belum ditentukan.',
+    priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
   },
 
   {
