@@ -21,7 +21,7 @@ export function HomePage({ featuredProducts, totalProducts, onNavigate }: HomePa
     <>
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="eyebrow-line" /> THE TRIVE SELECTION · VOL. 01</p>
+          <p className="eyebrow"><span className="eyebrow-line" /> THE JADE DISTRICT EDIT · VOL. 01</p>
           <h1>Selera yang baik.<br /><em>Dipilih dengan cermat.</em></h1>
           <p className="hero-description">Kurasi parfum, tas, dan produk lifestyle untuk melengkapi gayamu. Temukan pilihan yang terasa personal, relevan, dan berkarakter.</p>
           <button className="button button-dark" onClick={() => onNavigate('/products')}>Jelajahi koleksi <span>↗</span></button>
@@ -49,7 +49,7 @@ export function HomePage({ featuredProducts, totalProducts, onNavigate }: HomePa
       <section className="collection-section home-featured">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">PILIHAN TRIVE</p>
+            <p className="eyebrow">PILIHAN JADE DISTRICT</p>
             <h2>Temuan yang <em>berkarakter.</em></h2>
             <p className="section-subtitle">Sebagian kecil dari {totalProducts} produk dalam koleksi kami.</p>
           </div>
@@ -63,7 +63,7 @@ export function HomePage({ featuredProducts, totalProducts, onNavigate }: HomePa
 
       <section className="newsletter">
         <div>
-          <p className="eyebrow">TRIVE NOTES</p>
+          <p className="eyebrow">JADE DISTRICT NOTES</p>
           <h2>Temuan menarik,<br /><em>sesekali hadir.</em></h2>
           <p>Produk pilihan dan kabar terbaru, tanpa kebisingan.</p>
         </div>
