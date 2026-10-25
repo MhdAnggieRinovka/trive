@@ -40,7 +40,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
           <div className="modal-price">{product.price}</div>
           <p className="price-reference-note">
-            {product.priceNote ?? 'Harga referensi online; harga jual final TRIVE dan ketersediaan perlu dikonfirmasi.'}
+            {product.priceNote ?? 'Harga referensi online; harga jual final JADE DISTRICT dan ketersediaan perlu dikonfirmasi.'}
           </p>
 
           <dl className="modal-facts">
