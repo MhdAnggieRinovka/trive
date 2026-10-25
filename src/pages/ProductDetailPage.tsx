@@ -43,7 +43,7 @@ export function ProductDetailPage({ product, onNavigate }: ProductDetailPageProp
           {product.tag && <span className="detail-product-tag">{product.tag}</span>}
           <p className="product-detail-description">{product.description}</p>
           <div className="product-detail-price">{product.price}</div>
-          <p className="price-reference-note">{product.priceNote ?? 'Harga referensi online; harga jual final TRIVE dan ketersediaan perlu dikonfirmasi.'}</p>
+          <p className="price-reference-note">{product.priceNote ?? 'Harga referensi online; harga jual final JADE DISTRICT dan ketersediaan perlu dikonfirmasi.'}</p>
 
           <dl className="product-detail-facts">
             {facts.map((fact) => <div key={fact.label}><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}
