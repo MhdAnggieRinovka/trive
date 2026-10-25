@@ -23,7 +23,7 @@ export function HomePage({ featuredProducts, totalProducts, onNavigate }: HomePa
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-line" /> THE JADE DISTRICT EDIT · VOL. 01</p>
           <h1>Selera yang baik.<br /><em>Dipilih dengan cermat.</em></h1>
-          <p className="hero-description">Kurasi parfum, tas, dan produk lifestyle untuk melengkapi gayamu. Temukan pilihan yang terasa personal, relevan, dan berkarakter.</p>
+          <p className="hero-description">Kurasi fashion, tas, parfum, dan perangkat vape untuk melengkapi gaya personalmu—dipilih dengan fokus pada karakter, detail, dan estetika.</p>
           <button className="button button-dark" onClick={() => onNavigate('/products')}>Jelajahi koleksi <span>↗</span></button>
           <div className="hero-footnote"><span>✳</span> PILIHAN BERMAKNA, TANPA BERLEBIHAN.</div>
         </div>
