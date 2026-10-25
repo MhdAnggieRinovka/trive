@@ -820,3 +820,18 @@ select:focus-visible {
     padding-bottom: 18px;
   }
 }
+
+/* Chinese wordmark sizing for the About page */
+.about-mark[lang="zh-Hans"] {
+  font-family: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  font-size: 50px;
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .about-mark[lang="zh-Hans"] {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+}
