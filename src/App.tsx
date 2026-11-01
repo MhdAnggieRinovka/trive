@@ -9,6 +9,8 @@ import { AboutPage } from './pages/AboutPage'
 import { CollectionPage } from './pages/CollectionPage'
 import { ProductDetailPage } from './pages/ProductDetailPage'
 import { NotFoundPage } from './pages/NotFoundPage'
+import { ComingSoonPage } from './pages/ComingSoonPage'
+import { ContactPage } from './pages/ContactPage'
 
 const categoryRoutes: Record<string, ProductCategory> = {
   '/parfum': 'Parfum',
@@ -54,6 +56,10 @@ function App() {
     page = <HomePage featuredProducts={products.slice(0, 4)} totalProducts={products.length} onNavigate={navigate} />
   } else if (pathname === '/about') {
     page = <AboutPage onNavigate={navigate} />
+  } else if (pathname === '/contact') {
+    page = <ContactPage />
+  } else if (pathname === '/tas') {
+    page = <ComingSoonPage />
   } else if (pathname === '/products' || categoryRoutes[pathname]) {
     const currentCategory = categoryRoutes[pathname]
     const isAllProducts = pathname === '/products'
