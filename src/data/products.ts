@@ -28,7 +28,13 @@ export const products: Product[] = [
     occasion: 'Aktivitas harian, kantor, kampus, dan cuaca hangat.',
     priceNote: 'Referensi listing 100 ml. Harga dan stok dapat berubah antarpenjual.',
     priceSourceUrl: 'https://tokoparfume.com/produk/afnan-9am-dive-eau-de-parfum-100ml',
-    detailsSourceUrl: 'https://tokoparfume.com/produk/afnan-9am-dive-eau-de-parfum-100ml',
+    detailsSourceUrl: 'https://afnan.com/products/9-am-dive',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Afnan (brand)', url: 'https://afnan.com/products/9-am-dive' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/afnan/9am-dive-78611.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Afnan_Perfumes/9am-dive' },
+    ],
   },
   {
     id: 'amouage-interlude-man',
@@ -73,6 +79,12 @@ export const products: Product[] = [
     occasion: 'Malam hari, acara khusus, dan penggunaan saat cuaca sejuk.',
     priceNote: 'Estimasi awal untuk pasar Indonesia; belum ditemukan listing lokal yang cukup sebanding dalam riset ini. Verifikasi harga/varian sebelum dipublikasikan.',
     detailsSourceUrl: 'https://lattafa.com/product/asad-bourbon/',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Lattafa (brand)', url: 'https://lattafa.com/product/asad-bourbon/' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Lattafa-Perfumes/Asad-Bourbon-101124.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Lattafa/asad-bourbon' },
+    ],
   },
   {
     id: 'bvlgari-aqva-pour-homme',
