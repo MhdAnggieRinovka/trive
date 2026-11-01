@@ -8,6 +8,7 @@ import { HomePage } from './pages/HomePage'
 import { AboutPage } from './pages/AboutPage'
 import { CollectionPage } from './pages/CollectionPage'
 import { ProductDetailPage } from './pages/ProductDetailPage'
+import { AromaDetailPage } from './pages/AromaDetailPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { ComingSoonPage } from './pages/ComingSoonPage'
 import { ContactPage } from './pages/ContactPage'
@@ -46,6 +47,8 @@ function App() {
   }
 
   const availableProducts = products.filter((product) => product.category !== 'Tas')
+  const aromaRoute = pathname.match(/^\/parfum\/([^/]+)\/aroma$/)
+  const aromaProduct = aromaRoute ? availableProducts.find((product) => product.id === aromaRoute[1] && product.category === 'Parfum' && product.aromaVerified) : undefined
   const productRoute = pathname.match(/^\/(parfum|tas|vape)\/([^/]+)$/)
   const selectedProduct = productRoute
     ? availableProducts.find((product) => product.id === productRoute[2] && product.category.toLowerCase() === productRoute[1])
@@ -85,6 +88,8 @@ function App() {
         onNavigate={navigate}
       />
     )
+  } else if (aromaProduct) {
+    page = <AromaDetailPage product={aromaProduct} onNavigate={navigate} />
   } else if (selectedProduct) {
     page = <ProductDetailPage product={selectedProduct} onNavigate={navigate} />
   } else {
