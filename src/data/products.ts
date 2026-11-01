@@ -1019,11 +1019,17 @@ export const products: Product[] = [
     concentration: 'Eau de Parfum (EDP)',
     gender: 'Wanita',
     scentFamily: 'Citrus · White Floral · Vanilla',
-    topNotes: ['Bergamot', 'Orange blossom'],
-    heartNotes: ['Tuberose', 'Jasmine'],
-    baseNotes: ['Vanilla', 'White musk', 'Cedarwood'],
+    topNotes: ["Bergamot","Orange blossom"],
+    heartNotes: ["Tuberose","Indian jasmine"],
+    baseNotes: ["Madagascar vanilla","White musk","Virginia cedar"],
     occasion: 'Harian, acara semi-formal, dan momen spesial.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Armani Beauty official', url: 'https://www.giorgioarmanibeauty-usa.com/fragrances-womens-fragrances-perfume-my-way-my-way-eau-de-parfum-the-new-feminine-fragrance/A2259.html' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Giorgio-Armani/My-Way-62036.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Giorgio_Armani/my-way-eau-de-parfum' },
+    ],
   },
   {
     id: 'armaf-odyssey-dubai-chocolat',
@@ -1526,6 +1532,12 @@ export const products: Product[] = [
     gender: 'Unisex',
     scentFamily: 'Fruity · Gourmand · Amber',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'TOM FORD BEAUTY official', url: 'https://www.tomfordbeauty.com/products/lost-cherry-eau-de-parfum' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Tom_Ford/Lost_Cherry' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/parfem/Tom-Ford/Lost-Cherry-51411.html' },
+    ],
   },
   {
     id: 'zara-nude-bouquet',
