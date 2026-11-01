@@ -251,6 +251,12 @@ export const products: Product[] = [
     baseNotes: ['Amber', 'Cashmeran', 'Labdanum', 'Leather'],
     occasion: 'Harian hingga malam hari.',
     priceNote: 'Mengacu pada listing Fakhar Gold Extrait 100 ml. Nama di aset gambar lebih pendek; pastikan varian fisik sebelum memakai data ini.',
+    aromaSources: [
+      { label: 'Lattafa USA listing', url: 'https://lattafa-usa.com/products/lattafa-fakhar-gold-extrait-eau-de-parfum-for-everyone' },
+      { label: 'Fragrantica · Fakhar Extrait', url: 'https://www.fragrantica.com/perfume/Lattafa-Perfumes/Fakhar-Extrait-101565.html' },
+      { label: 'Parfumo · Fakhar Extrait', url: 'https://www.parfumo.com/Perfumes/Lattafa/fakhar-extrait' },
+    ],
+    aromaAuditNote: 'Belum diaktifkan: nama produk pada listing tidak konsisten dengan nama varian resmi Fakhar Extrait; pastikan botol fisik sebelum memilih komposisi.',
     priceSourceUrl: 'https://shopee.co.id/Lattafa-Fakhr-Gold-Extrait-Eau-De-Parfum-100Ml-i.389463833.42518497233',
     detailsSourceUrl: 'https://lattafa-usa.com/products/lattafa-fakhar-gold-extrait-eau-de-parfum-for-everyone',
   },
@@ -599,6 +605,7 @@ export const products: Product[] = [
     scentFamily: 'Belum teridentifikasi',
     occasion: 'Detail pemakaian disesuaikan setelah varian parfum dikonfirmasi.',
     priceNote: 'Nama varian dan harga jual JADE DISTRICT belum dikonfirmasi.',
+    aromaAuditNote: 'Belum diaktifkan: nama 'Black Textured Perfume' hanya mendeskripsikan tampilan botol dan belum mengidentifikasi nama varian YSL yang tepat.',
   },
   {
     id: 'coach-blue-edt',
@@ -1323,6 +1330,12 @@ export const products: Product[] = [
     baseNotes: ['Amber', 'Musk'],
     occasion: 'Harian hingga malam hari untuk penggemar aroma manis yang hangat.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; ukuran dan varian perlu dikonfirmasi.',
+    aromaSources: [
+      { label: 'Parfumo · Red Vanilla Intense', url: 'https://www.parfumo.com/Perfumes/Zara/red-vanilla-intense' },
+      { label: 'Zara official · Red Vanilla', url: 'https://www.zara.com/id/id/red-vanilla---black-amber-edt-2x90ml--3-04-fl--oz---p20120852.html' },
+      { label: 'Fragrantica · Red Vanilla', url: 'https://www.fragrantica.com/perfume/Zara/Red-Vanilla-34983.html' },
+    ],
+    aromaAuditNote: 'Belum diaktifkan: hanya satu database yang mengidentifikasi Red Vanilla Intense; sumber Zara dan database lain yang ditemukan merujuk ke Red Vanilla biasa, bukan varian Intense.',
   },
   {
     id: 'jean-paul-gaultier-scandal',
@@ -1570,6 +1583,12 @@ export const products: Product[] = [
     gender: 'Unisex',
     scentFamily: 'Fruity · Fresh',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaSources: [
+      { label: 'Zara official · Applejuice Day Collection', url: 'https://www.zara.com/id/id/applejuice-edt-30ml-p20120805.html' },
+      { label: 'Fragrantica · Applejuice 2012', url: 'https://www.fragrantica.com/perfume/Zara/Applejuice-17189.html' },
+      { label: 'Parfumo · Applejuice 2012', url: 'https://www.parfumo.com/Perfumes/Zara/applejuice-zara-day-collection-05-applejuice-eau-de-toilette' },
+    ],
+    aromaAuditNote: 'Belum diaktifkan: Zara memperkenalkan ulang Applejuice dengan deskripsi Apple/Jasmine/Musk pada 2026, sedangkan piramida Fragrantica dan Parfumo yang tersedia merujuk formula 2012.',
   },
   {
     id: 'maison-francis-kurkdjian-baccarat-rouge-540',
@@ -1735,11 +1754,18 @@ export const products: Product[] = [
     priceValue: 250000,
     image: '/products/parfum/Light%20Blue%20Dolce%20and%20Gabbana.png',
     tag: 'FRESH',
-    volume: 'Belum dikonfirmasi',
+    volume: '100 ml (acuan varian 2025)',
     concentration: 'Eau de Toilette (EDT)',
-    gender: 'Belum dikonfirmasi',
+    gender: 'Wanita',
     scentFamily: 'Citrus · Fresh · Woody',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Dolce&Gabbana official', url: 'https://www.dolcegabbana.com/en-us/beauty/perfumes-for-her/light-blue/light-blue-eau-de-toilette---VT01JMVT0009V000.html' },
+      { label: 'Fragrantica · 2025', url: 'https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-Eau-de-Toilette-104985.html' },
+      { label: 'The Scent Base', url: 'https://thescentbase.com/id/perfumes/dolce-gabbana/light-blue-eau-de-toilette' },
+      { label: 'Nordstrom', url: 'https://www.nordstrom.com/s/dolce-and-gabbana-light-blue-eau-de-toilette/7756835' },
+    ],
   },
   {
     id: 'tom-ford-lost-cherry',
@@ -1778,6 +1804,12 @@ export const products: Product[] = [
     gender: 'Wanita',
     scentFamily: 'Floral · Soft Sweet',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaSources: [
+      { label: 'Fragrantica · Nude Bouquet 2023', url: 'https://www.fragrantica.com/perfume/Zara/Nude-Bouquet-92192.html' },
+      { label: 'Parfumo · Nude Bouquet', url: 'https://www.parfumo.com/Perfumes/Zara/nude-bouquet' },
+      { label: 'PerScento · Nude Bouquet 2026', url: 'https://www.perscento.com/perfume/zara-nude-bouquet' },
+    ],
+    aromaAuditNote: 'Belum diaktifkan: terdapat beberapa edisi berbeda (Nude Bouquet 2023, Nude Bouquet Intense, dan komposisi yang lebih baru); nama pada katalog belum menentukan edisi fisik.',
   },
   {
     id: 'armaf-odyssey-candee',
@@ -1838,6 +1870,12 @@ export const products: Product[] = [
     gender: 'Belum dikonfirmasi',
     scentFamily: 'Belum teridentifikasi',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaSources: [
+      { label: 'Zara official · Pink Flambé Weekend Collection', url: 'https://www.zara.com/id/id/pink-flambe-edt-90ml--3-04-fl--oz---p20120881.html' },
+      { label: 'Fragrantica · Pink Flambé', url: 'https://www.fragrantica.com/perfume/Zara/Pink-Flambe-137228.html' },
+      { label: 'Parfumo · Pink Flambé Weekend 2021', url: 'https://www.parfumo.com/Perfumes/Zara/pink-flambe-zara-weekend-01-pink-flambe-2021' },
+    ],
+    aromaAuditNote: 'Belum diaktifkan: ditemukan beberapa produk bernama Pink Flambé dengan komposisi berbeda (2018, Weekend Collection, Summer, dan Glitter); merek/edisi botol pada katalog belum dipastikan.',
   },
   {
     id: 'kayali-vanilla-28',
@@ -1898,6 +1936,12 @@ export const products: Product[] = [
     gender: 'Wanita',
     scentFamily: 'Floral · Sweet · Amber',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaSources: [
+      { label: 'Zara official · Violet Blossom EDP', url: 'https://www.zara.com/id/id/violet-blossom-edp-90-ml--3-04-fl--oz---p20120927.html' },
+      { label: 'Fragrantica · Violet Blossom 2019', url: 'https://www.fragrantica.com/perfume/Zara/Violet-Blossom-56281.html' },
+      { label: 'Parfumo · Violet Blossom EDP', url: 'https://www.parfumo.com/Perfumes/Zara/violet-blossom-eau-de-parfum' },
+    ],
+    aromaAuditNote: 'Belum diaktifkan: komposisi Zara Night Collection 2026 (cherry blossom, magnolia, vanilla) berbeda dari database lama yang mencatat tonka/almond; pastikan edisi fisik sebelum menampilkan piramida.',
   },
   {
     id: 'azzaro-wanted-man',
