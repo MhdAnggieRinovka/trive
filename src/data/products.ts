@@ -1509,6 +1509,12 @@ export const products: Product[] = [
     gender: 'Unisex',
     scentFamily: 'Amber · Woody · Floral',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Maison Francis Kurkdjian official', url: 'https://www.franciskurkdjian.com/us-en/p/baccarat-rouge-540-eau-de-parfum-RA12232.html' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Baccarat-Rouge-540-Eau-de-Parfum-33519.html' },
+      { label: 'Perfume DNA', url: 'https://perfume-dna.com/perfumes/maison-francis-kurkdjian/baccarat-rouge-540' },
+    ],
   },
   {
     id: 'zara-black-amber',
@@ -1741,6 +1747,12 @@ export const products: Product[] = [
     gender: 'Unisex',
     scentFamily: 'Vanilla · Amber · Sweet',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'KAYALI official', url: 'https://us.kayali.com/products/vanilla-28' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Kayali-Fragrances/Vanilla-28-52616.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Kayali/vanilla-28-eau-de-parfum' },
+    ],
   },
   {
     id: 'matiere-premiere-vanilla-powder',
@@ -1789,6 +1801,12 @@ export const products: Product[] = [
     gender: 'Pria',
     scentFamily: 'Aromatic · Spicy · Woody',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Azzaro official', url: 'https://www.azzaro.com/en/fragrances/azzaro-wanted' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/azzaro/wanted-38686.html' },
+      { label: 'Fragrances Database', url: 'https://fragrancesdb.com/perfumes/azzaro-wanted-edt' },
+    ],
   },
   {
     id: 'zara-peony',
