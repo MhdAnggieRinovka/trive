@@ -21,7 +21,7 @@ export function SiteFooter({ onNavigate }: SiteFooterProps) {
       <div className="footer-links">
         <a href="/products" onClick={(event) => follow(event, '/products')}>Koleksi</a>
         <a href="/about" onClick={(event) => follow(event, '/about')}>Tentang kami</a>
-        <a href="mailto:hello@trive.store">Kontak</a>
+        <a href="/contact" onClick={(event) => follow(event, '/contact') }>Kontak</a>
       </div>
       <span className="copyright">© {new Date().getFullYear()} JADE DISTRICT. MADE WITH INTENTION.</span>
     </footer>
