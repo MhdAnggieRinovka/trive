@@ -1178,6 +1178,12 @@ export const products: Product[] = [
     scentFamily: 'Floral · Soft Sweet',
     occasion: 'Harian, siang hari, dan suasana santai.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; ukuran dan varian perlu dikonfirmasi.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Zara official Indonesia', url: 'https://www.zara.com/id/id/orchid-edp-90-ml--3-04-fl--oz---p20120820.html' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Zara/Orchid-137230.html' },
+      { label: 'Scendira', url: 'https://www.scendira.com/products/zara-orchid-edp' },
+    ],
   },
   {
     id: 'prada-paradigme-man',
