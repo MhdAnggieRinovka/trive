@@ -63,7 +63,6 @@ export function ProductDetailPage({ product, onNavigate }: ProductDetailPageProp
           {product.occasion && <p className="product-detail-occasion"><strong>Saran pemakaian:</strong> {product.occasion}</p>}
           <div className="detail-source-links">
             {product.detailsSourceUrl && <a href={product.detailsSourceUrl} target="_blank" rel="noreferrer">{product.category === 'Tas' ? 'Detail produk ↗' : 'Detail aroma ↗'}</a>}
-            {product.priceSourceUrl && <a href={product.priceSourceUrl} target="_blank" rel="noreferrer">Referensi harga ↗</a>}
           </div>
           {(product.category === 'Parfum' || product.category === 'Vape') && (
             <a className={'button button-whatsapp' + (getWhatsAppUrl(product) ? '' : ' button-disabled')} href={getWhatsAppUrl(product) ?? undefined} target={getWhatsAppUrl(product) ? '_blank' : undefined} rel={getWhatsAppUrl(product) ? 'noreferrer' : undefined} aria-disabled={!getWhatsAppUrl(product)}>
