@@ -20,6 +20,7 @@ export interface Product {
   topNotes?: string[]
   heartNotes?: string[]
   baseNotes?: string[]
+  aromaNoteList?: string[]
   occasion?: string
   priceNote?: string
   priceSourceUrl?: string
