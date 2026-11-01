@@ -122,16 +122,13 @@ export const products: Product[] = [
     concentration: 'Eau de Toilette (EDT)',
     gender: 'Pria',
     scentFamily: 'Aquatic · Aromatic',
-    topNotes: ['Sea water', 'Mint', 'Green notes', 'Lavender', 'Rosemary'],
-    heartNotes: ['Sandalwood', 'Neroli', 'Geranium', 'Jasmine'],
-    baseNotes: ['Musk', 'Oakmoss', 'Cedar', 'Tobacco', 'Amber'],
-    occasion: 'Harian, kantor, aktivitas santai, dan cuaca panas.',
-    priceNote: 'Harga pembanding listing 125 ml; listing lain dapat lebih mahal atau lebih murah.',
-    priceSourceUrl: 'https://www.blibli.com/p/parfum-pria-davidoff-coolwater-man-edt-125-ml/is--HAE-70463-02311-00001',
-    detailsSourceUrl: 'https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml
     topNotes: ['Peppermint', 'Lavender'],
     heartNotes: ['Oakmoss', 'Geranium', 'Sandalwood'],
     baseNotes: ['Amber', 'Musk'],
+    occasion: 'Harian, kantor, aktivitas santai, dan cuaca panas.',
+    priceNote: 'Harga pembanding listing 125 ml; listing lain dapat lebih mahal atau lebih murah.',
+    priceSourceUrl: 'https://www.blibli.com/p/parfum-pria-davidoff-coolwater-man-edt-125-ml/is--HAE-70463-02311-00001',
+    detailsSourceUrl: 'https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml',
     aromaVerified: true,
     aromaSources: [
       { label: 'Davidoff (brand)', url: 'https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml' },
@@ -158,7 +155,7 @@ export const products: Product[] = [
     occasion: 'Harian, siang hari, dan suasana yang menginginkan aroma floral bersih.',
     priceNote: 'Harga referensi listing online Indonesia; ukuran, seller, dan stok perlu dicek saat membeli.',
     priceSourceUrl: 'https://www.blibli.com/brand/estee',
-    detailsSourceUrl: 'https://www.esteelauder.com.hk/en-hk/product/571/2094/product-catalog/fragrance/estee-lauder-pleasures/eau-de-parfum-spray
+    detailsSourceUrl: 'https://www.esteelauder.com.hk/en-hk/product/571/2094/product-catalog/fragrance/estee-lauder-pleasures/eau-de-parfum-spray',
     aromaVerified: true,
     aromaSources: [
       { label: 'Estée Lauder (brand)', url: 'https://www.esteelauder.com.hk/en-hk/product/571/2094/product-catalog/fragrance/estee-lauder-pleasures/eau-de-parfum-spray' },
@@ -254,7 +251,7 @@ export const products: Product[] = [
     occasion: 'Malam hari, acara formal, dan momen khusus.',
     priceNote: 'Harga awal dari listing brand di Sephora Indonesia; ukuran pada harga awal tidak berarti ukuran di visual.',
     priceSourceUrl: 'https://www.sephora.co.id/brands/tom-ford-beauty',
-    detailsSourceUrl: 'https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum
+    detailsSourceUrl: 'https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum',
     aromaVerified: true,
     aromaSources: [
       { label: 'TOM FORD BEAUTY (brand)', url: 'https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum' },
@@ -281,7 +278,7 @@ export const products: Product[] = [
     occasion: 'Sepanjang tahun; bisa dipakai sendiri atau dilayer dengan parfum lain.',
     priceNote: 'Harga listing brand Sephora Indonesia; ukuran dan ketersediaan dapat mengubah harga.',
     priceSourceUrl: 'https://www.sephora.co.id/brands/kayali',
-    detailsSourceUrl: 'https://us.kayali.com/products/fleur-majesty-rose-royale-31
+    detailsSourceUrl: 'https://us.kayali.com/products/fleur-majesty-rose-royale-31',
     aromaVerified: true,
     aromaSources: [
       { label: 'KAYALI (brand)', url: 'https://us.kayali.com/products/fleur-majesty-rose-royale-31' },
@@ -349,7 +346,7 @@ export const products: Product[] = [
     occasion: 'Makan malam, kencan, dan acara malam.',
     priceNote: 'Harga pembanding 100 ml dari retailer Indonesia; bandingkan stok dan variasi seller.',
     priceSourceUrl: 'https://lensza.co.id/products/carolina-herrera-212-sexy-woman-100ml',
-    detailsSourceUrl: 'https://www.carolinaherrera.com/ww/en/p-fragrance/212-sexy
+    detailsSourceUrl: 'https://www.carolinaherrera.com/ww/en/p-fragrance/212-sexy',
     aromaVerified: true,
     aromaSources: [
       { label: 'Carolina Herrera (brand)', url: 'https://www.carolinaherrera.com/ww/en/p-fragrance/212-sexy' },
@@ -469,7 +466,7 @@ export const products: Product[] = [
     baseNotes: ['Musk', 'Orange', 'Amber'],
     occasion: 'Aktivitas harian, siang hari, dan suasana santai.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
-    detailsSourceUrl: 'https://afnan.com/products/9-am-pour-femme
+    detailsSourceUrl: 'https://afnan.com/products/9-am-pour-femme',
     aromaVerified: true,
     aromaSources: [
       { label: 'Afnan (brand)', url: 'https://afnan.com/products/9-am-pour-femme' },
