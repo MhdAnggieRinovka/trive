@@ -1186,11 +1186,17 @@ export const products: Product[] = [
     concentration: 'Eau de Parfum',
     gender: 'Unisex',
     scentFamily: 'Oud · Amber · Smoky',
-    topNotes: ['Raspberry', 'Saffron'],
-    heartNotes: ['Rose', 'Oud', 'Incense'],
-    baseNotes: ['Benzoin', 'Amber accords'],
+    topNotes: ["Raspberry","Incense"],
+    heartNotes: ["Oud","Rose"],
+    baseNotes: ["Ambergris","Benzoin","Guaiac wood"],
     occasion: 'Malam hari, acara formal, dan momen spesial.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Louis Vuitton official', url: 'https://id.louisvuitton.com/ind-id/products/ombre-nomade-nvprod990245v/LP0095' },
+      { label: 'Olfact', url: 'https://olfact.me/en/perfume/louis-vuitton-ombre-nomade' },
+      { label: 'The Fragrance World', url: 'https://thefragranceworld.co.uk/blog/louis-vuitton-ombre-nomade-uk-guide/' },
+    ],
   },
   {
     id: 'zara-orchid',
@@ -1601,7 +1607,7 @@ export const products: Product[] = [
   },
   {
     id: 'ahmed-blush',
-    name: 'Blush Perfume',
+    name: 'Blush Noire Extrait de Parfum',
     brand: 'Ahmed',
     category: 'Parfum',
     description: 'Parfum dengan tampilan botol bernuansa merah muda. Varian dan profil aroma perlu dikonfirmasi dari kemasan produk.',
@@ -1614,6 +1620,12 @@ export const products: Product[] = [
     gender: 'Belum dikonfirmasi',
     scentFamily: 'Belum teridentifikasi',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Ahmed Al Maghribi official', url: 'https://ksa.ahmedalmaghribi.com/en/shop/perfumes/occidental-fragrance/blush-noire' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Ahmed_Al_Maghribi/blush-noire' },
+      { label: 'Ahmed Al Maghribi India official', url: 'https://ahmedalmaghribi.co.in/products/blush-noire' },
+    ],
   },
   {
     id: 'coach-new-york-edp',
