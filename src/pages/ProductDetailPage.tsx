@@ -21,12 +21,17 @@ export function ProductDetailPage({ product, onNavigate }: ProductDetailPageProp
         { label: 'Tali', value: product.strap ?? 'Belum dikonfirmasi' },
         { label: 'Warna', value: product.color ?? 'Belum dirinci' },
       ]
-    : [
-        { label: 'Isi / ukuran', value: product.volume ?? 'Belum dikonfirmasi' },
-        { label: 'Konsentrasi', value: product.concentration ?? 'Belum dikonfirmasi' },
-        { label: 'Karakter aroma', value: product.scentFamily ?? 'Belum dirinci' },
-        { label: 'Kategori pemakaian', value: product.gender ?? 'Belum dirinci' },
-      ]
+    : product.category === 'Vape'
+      ? [
+          { label: 'Jenis', value: product.vapeType ?? 'Belum ditentukan' },
+          { label: 'Warna / varian', value: product.color ?? 'Belum dikonfirmasi' },
+        ]
+      : [
+          { label: 'Isi / ukuran', value: product.volume ?? 'Belum dikonfirmasi' },
+          { label: 'Konsentrasi', value: product.concentration ?? 'Belum dikonfirmasi' },
+          { label: 'Karakter aroma', value: product.scentFamily ?? 'Belum dirinci' },
+          { label: 'Kategori pemakaian', value: product.gender ?? 'Belum dirinci' },
+        ]
 
   return (
     <section className="product-detail-page">
@@ -70,7 +75,7 @@ export function ProductDetailPage({ product, onNavigate }: ProductDetailPageProp
               <span aria-hidden="true">◉</span> {getWhatsAppUrl(product) ? 'Tanyakan via WhatsApp' : 'WhatsApp segera tersedia'} <span>↗</span>
             </a>
           )}
-          <div className="detail-note"><span>✳</span><p>Gambar katalog merupakan visual AI, bukan foto barang aktual. Verifikasi model, bahan, ukuran, kondisi, keaslian, dan harga barang sebelum dipublikasikan.</p></div>
+          <div className="detail-note"><span>✳</span><p>{product.category === 'Vape' ? 'Foto varian berasal dari gambar produk yang diberikan. Informasi teknis, kelengkapan, kondisi, dan ketersediaan perlu dikonfirmasi sebelum ditampilkan sebagai spesifikasi.' : 'Gambar katalog merupakan visual AI, bukan foto barang aktual. Verifikasi model, bahan, ukuran, kondisi, keaslian, dan harga barang sebelum dipublikasikan.'}</p></div>
           <button className="button button-dark product-detail-back" onClick={() => onNavigate(`/${product.category.toLowerCase()}`)}>Kembali ke {product.category.toLowerCase()} <span>↗</span></button>
         </article>
       </div>
