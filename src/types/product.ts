@@ -24,6 +24,7 @@ export interface Product {
   priceNote?: string
   priceSourceUrl?: string
   detailsSourceUrl?: string
+  aromaVerified?: boolean
   dimensions?: string
   material?: string
   bagStyle?: string
