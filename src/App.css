@@ -159,8 +159,8 @@ h1 em, h2 em { font-family: 'Playfair Display', serif; font-weight: 500; }
 .occasion-note { color: var(--muted); font-size: 10px; line-height: 1.7; margin: 16px 0; }
 .occasion-note strong { color: var(--text); }
 .detail-source-links { display: flex; flex-wrap: wrap; gap: 14px; margin: 18px 0; }
-.detail-source-links a { color: var(--text); font-size: 10px; padding-bottom: 4px; border-bottom: 1px solid var(--accent); }
-.detail-source-links a:hover { opacity: .7; }
+.detail-source-links a, .detail-source-links button { color: var(--text); font: inherit; font-size: 10px; padding: 0 0 4px; border: 0; border-bottom: 1px solid var(--accent); background: transparent; cursor: pointer; }
+.detail-source-links a:hover, .detail-source-links button:hover { opacity: .7; }
 @media (max-width: 760px) {
   .modal-facts { gap: 0 12px; }
   .price-reference-note { margin-top: -10px; }
