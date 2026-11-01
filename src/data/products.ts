@@ -560,6 +560,12 @@ export const products: Product[] = [
     baseNotes: ['Cedarwood', 'Amber'],
     occasion: 'Harian, kantor, dan aktivitas luar ruangan.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Coach official', url: 'https://www.coach.com/products/blue-eau-de-toilette-100-ml/B1087-L38.html' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Coach/Coach-Blue-60332.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Coach/coach-blue' },
+    ],
   },
   {
     id: 'givenchy-blue-label',
