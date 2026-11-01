@@ -14,6 +14,7 @@ const navItems: { label: string; path: string }[] = [
   { label: 'Tas', path: '/tas' },
   { label: 'Vape', path: '/vape' },
   { label: 'Tentang JADE DISTRICT', path: '/about' },
+  { label: 'Kontak', path: '/contact' },
 ]
 
 export function SiteHeader({ currentPath, dark, search, onNavigate, onToggleTheme, onSearchChange }: SiteHeaderProps) {
