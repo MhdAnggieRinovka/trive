@@ -1,6 +1,6 @@
 // Isi nomor WhatsApp penjual di sini nanti, gunakan format internasional tanpa tanda + atau spasi.
 // Contoh: 6281234567890
-export const WHATSAPP_NUMBER = ''
+export const WHATSAPP_NUMBER = '+6281770883997'
 
 export function getWhatsAppUrl(product?: { name: string; category?: string }) {
   const number = WHATSAPP_NUMBER.replace(/\D/g, '')
