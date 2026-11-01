@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import type { Product, ProductCategory } from '../types/product'
 import { ProductCard } from '../components/ProductCard'
 
@@ -16,8 +17,9 @@ interface CollectionPageProps {
 }
 
 export function CollectionPage({ title, titleEmphasis, intro, category, products, search, sort, layout, onSortChange, onLayoutChange, onNavigate }: CollectionPageProps) {
+  const [vapeType, setVapeType] = useState<'Device' | 'Liquid'>('Device')
   const visibleProducts = products
-    .filter((product) => (!category || product.category === category) && [product.name, product.brand, product.category, product.description].some((value) => value.toLowerCase().includes(search.trim().toLowerCase())))
+    .filter((product) => (!category || product.category === category) && (category !== 'Vape' || product.vapeType === vapeType) && [product.name, product.brand, product.category, product.description].some((value) => value.toLowerCase().includes(search.trim().toLowerCase())))
     .sort((a, b) => {
       if (sort === 'name') return a.name.localeCompare(b.name)
       if (sort === 'price') return (a.priceValue ?? Number.POSITIVE_INFINITY) - (b.priceValue ?? Number.POSITIVE_INFINITY)
@@ -34,6 +36,7 @@ export function CollectionPage({ title, titleEmphasis, intro, category, products
         <h1>{title} <em>{titleEmphasis}</em></h1>
         <p>{intro}</p>
       </div>
+      {category === 'Vape' && <div className="vape-subcategory-switch" role="group" aria-label="Subkategori vape"><button className={vapeType === 'Device' ? 'active' : ''} onClick={() => setVapeType('Device')}>Device</button><button className={vapeType === 'Liquid' ? 'active' : ''} onClick={() => setVapeType('Liquid')}>Liquid</button></div>}
       <div className="section-heading collection-page-heading">
         <div><p className="eyebrow">TEMUKAN FAVORITMU</p><p className="section-subtitle">Pilih dengan tenang, temukan yang cocok.</p></div>
         <div className="collection-tools">
@@ -61,8 +64,8 @@ export function CollectionPage({ title, titleEmphasis, intro, category, products
         <div className="empty-state">
           <span className="empty-symbol">✳</span>
           <p className="eyebrow">{category ? `KOLEKSI ${category.toUpperCase()}` : 'BELUM ADA HASIL'}</p>
-          <h2>{category && visibleProducts.length === 0 && !search.trim() ? 'Barang belum tersedia.' : 'Belum ada produk yang cocok.'}</h2>
-          <p>{category && !search.trim() ? 'Kami sedang mengkurasi kategori ini. Silakan kunjungi kembali nanti.' : 'Coba kata kunci lain atau lihat semua koleksi.'}</p>
+          <h2>{category && visibleProducts.length === 0 && !search.trim() ? (category === 'Vape' ? `Koleksi ${vapeType} segera hadir.` : 'Barang belum tersedia.') : 'Belum ada produk yang cocok.'}</h2>
+          <p>{category && !search.trim() ? (category === 'Vape' ? `Kami sedang menyiapkan pilihan ${vapeType} untuk JADE DISTRICT.` : 'Kami sedang mengkurasi kategori ini. Silakan kunjungi kembali nanti.') : 'Coba kata kunci lain atau lihat semua koleksi.'}</p>
           <button className="button button-outline" onClick={() => onNavigate('/products')}>Lihat semua produk <span>↗</span></button>
         </div>
       )}
