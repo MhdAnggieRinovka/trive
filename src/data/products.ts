@@ -1784,6 +1784,12 @@ export const products: Product[] = [
     gender: 'Wanita',
     scentFamily: 'Fruity · Gourmand · Sweet',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Armaf official', url: 'https://armaf.com/products/odyssey-candee-gift-set' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Armaf/Odyssey-Candee-96990.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Armaf/odyssey-candee' },
+    ],
   },
   {
     id: 'armaf-odyssey-homme',
@@ -1968,11 +1974,15 @@ export const products: Product[] = [
     concentration: 'Eau de Parfum',
     gender: 'Unisex',
     scentFamily: 'Rose · Oud · Amber',
-    topNotes: ['Rose', 'Saffron'],
-    heartNotes: ['Oud', 'Amber'],
-    baseNotes: ['Sandalwood', 'Musk'],
     occasion: 'Malam hari, acara formal, dan momen khusus.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi ukuran dan varian produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Louis Vuitton official', url: 'https://id.louisvuitton.com/ind-id/products/les-sables-roses-nvprod1550066v/LP0121' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Louis-Vuitton/Les-Sables-Roses-55040.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Louis_Vuitton/Les_Sables_Roses' },
+    ],
+    aromaNoteList: ["Centifolia rose absolute","Bulgarian rose","Oud wood","Ambergris","Black pepper","Saffron"],
   },
 
 ]
