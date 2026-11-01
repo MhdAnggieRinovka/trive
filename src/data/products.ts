@@ -594,6 +594,12 @@ export const products: Product[] = [
     baseNotes: ['Musk', 'Ambergris', 'Patchouli', 'Vanilla'],
     occasion: 'Acara malam, pertemuan, dan saat menginginkan aroma yang kuat.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Armaf official (EDT)', url: 'https://armaf.com/products/club-de-nuit-intense-man-4' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Intense-Man-34696.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Armaf/club-de-nuit-intense-man-eau-de-toilette' },
+    ],
   },
   {
     id: 'giorgio-armani-code-profumo',
@@ -797,11 +803,17 @@ export const products: Product[] = [
     concentration: 'Eau de Parfum (EDP)',
     gender: 'Wanita',
     scentFamily: 'Floral · Vanilla · Powdery',
-    topNotes: ['Bitter almond', 'Peony'],
-    heartNotes: ['Ylang-ylang', 'Floral notes'],
+    topNotes: ['Bergamot', 'Bitter almond'],
+    heartNotes: ['Ylang-ylang', 'Peony'],
     baseNotes: ['Vanilla', 'Tonka bean'],
     occasion: 'Kencan, acara spesial, dan pemakaian malam hari.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Carolina Herrera official', url: 'https://www.carolinaherrera.com/us/en/p-fragrance/good-girl-blush' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Carolina_Herrera/good-girl-blush-eau-de-parfum' },
+      { label: 'Boots fragrance guide', url: 'https://www.boots.com/carolina-herrera/carolina-herrera-get-to-know-good-girl' },
+    ],
   },
   {
     id: 'creed-green-irish-tweed',
