@@ -6,11 +6,13 @@ interface AromaDetailPageProps {
 }
 
 export function AromaDetailPage({ product, onNavigate }: AromaDetailPageProps) {
-  const notes = [
-    { label: 'Top notes', values: product.topNotes },
-    { label: 'Heart notes', values: product.heartNotes },
-    { label: 'Base notes', values: product.baseNotes },
-  ].filter((group) => group.values?.length)
+  const notes = product.aromaNoteList?.length
+    ? [{ label: 'Published notes · no official pyramid', values: product.aromaNoteList }]
+    : [
+        { label: 'Top notes', values: product.topNotes },
+        { label: 'Heart notes', values: product.heartNotes },
+        { label: 'Base notes', values: product.baseNotes },
+      ].filter((group) => group.values?.length)
 
   return (
     <section className="product-detail-page aroma-detail-page">
@@ -36,7 +38,7 @@ export function AromaDetailPage({ product, onNavigate }: AromaDetailPageProps) {
             <h2>Komposisi aroma</h2>
             {notes.map((group) => <div className="detail-scent-note" key={group.label}><h3>{group.label}</h3><p>{group.values?.join(' · ')}</p></div>)}
           </section>
-          <p className="detail-note"><span>✳</span><span>Informasi ini dirangkum dari halaman resmi brand untuk referensi. Komposisi dapat berbeda pada varian atau reformulasi produk.</span></p>
+          <p className="detail-note"><span>✳</span><span>Informasi dirangkum dengan membandingkan referensi yang dicantumkan. Piramida top, heart, dan base hanya ditampilkan jika sumber menyediakan pembagian tersebut; komposisi dapat berbeda antarvarian atau reformulasi.</span></p>
           <div className="detail-source-links">
             {(product.aromaSources?.length ? product.aromaSources : product.detailsSourceUrl ? [{ label: `Sumber ${product.brand}`, url: product.detailsSourceUrl }] : []).map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}
           </div>
