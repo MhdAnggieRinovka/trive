@@ -39,9 +39,6 @@ export function AromaDetailPage({ product, onNavigate }: AromaDetailPageProps) {
             {notes.map((group) => <div className="detail-scent-note" key={group.label}><h3>{group.label}</h3><p>{group.values?.join(' · ')}</p></div>)}
           </section>
           <p className="detail-note"><span>✳</span><span>Informasi dirangkum dengan membandingkan referensi yang dicantumkan. Piramida top, heart, dan base hanya ditampilkan jika sumber menyediakan pembagian tersebut; komposisi dapat berbeda antarvarian atau reformulasi.</span></p>
-          <div className="detail-source-links">
-            {(product.aromaSources?.length ? product.aromaSources : product.detailsSourceUrl ? [{ label: `Sumber ${product.brand}`, url: product.detailsSourceUrl }] : []).map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}
-          </div>
           <button className="button button-dark product-detail-back" onClick={() => onNavigate(`/parfum/${product.id}`)}>Kembali ke detail produk <span>↗</span></button>
         </article>
       </div>
