@@ -38,7 +38,7 @@ export function AromaDetailPage({ product, onNavigate }: AromaDetailPageProps) {
           </section>
           <p className="detail-note"><span>✳</span><span>Informasi ini dirangkum dari halaman resmi brand untuk referensi. Komposisi dapat berbeda pada varian atau reformulasi produk.</span></p>
           <div className="detail-source-links">
-            <a href={product.detailsSourceUrl} target="_blank" rel="noreferrer">Lihat sumber resmi brand ↗</a>
+            {(product.aromaSources?.length ? product.aromaSources : product.detailsSourceUrl ? [{ label: `Sumber ${product.brand}`, url: product.detailsSourceUrl }] : []).map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}
           </div>
           <button className="button button-dark product-detail-back" onClick={() => onNavigate(`/parfum/${product.id}`)}>Kembali ke detail produk <span>↗</span></button>
         </article>
