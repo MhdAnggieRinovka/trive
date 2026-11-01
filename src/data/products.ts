@@ -716,6 +716,13 @@ export const products: Product[] = [
     baseNotes: ['Musk', 'Oakmoss', 'Patchouli'],
     occasion: 'Siang hari, cuaca hangat, dan aktivitas luar ruangan.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
+    detailsSourceUrl: 'https://www.versace.com/id/en/men/accessories/fragrances-body-care/eros-energy/eros-energy-edp-100-ml/R742010-R100MLS_RTU_TU_RNUL__.html',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Versace (brand)', url: 'https://www.versace.com/id/en/men/accessories/fragrances-body-care/eros-energy/eros-energy-edp-100-ml/R742010-R100MLS_RTU_TU_RNUL__.html' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Versace/Eros-Energy-92647.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Versace/eros-energy' },
+    ],
   },
   {
     id: 'coach-floral',
@@ -1041,6 +1048,13 @@ export const products: Product[] = [
     baseNotes: ['Ambery woods', 'Peru balsam', 'Benzoin', 'Guaiac wood'],
     occasion: 'Penggunaan harian, kantor, dan acara formal.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
+    detailsSourceUrl: 'https://www.prada-beauty.com/fragrance/paradigme/paradigme-eau-de-parfum/3614274182903.html',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Prada Beauty', url: 'https://www.prada-beauty.com/fragrance/paradigme/paradigme-eau-de-parfum/3614274182903.html' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Prada/Paradigme-110661.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Prada/paradigme-eau-de-parfum' },
+    ],
   },
   {
     id: 'kate-spade-pop',
