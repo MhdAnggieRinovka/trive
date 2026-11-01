@@ -605,7 +605,7 @@ export const products: Product[] = [
     scentFamily: 'Belum teridentifikasi',
     occasion: 'Detail pemakaian disesuaikan setelah varian parfum dikonfirmasi.',
     priceNote: 'Nama varian dan harga jual JADE DISTRICT belum dikonfirmasi.',
-    aromaAuditNote: 'Belum diaktifkan: nama 'Black Textured Perfume' hanya mendeskripsikan tampilan botol dan belum mengidentifikasi nama varian YSL yang tepat.',
+    aromaAuditNote: 'Belum diaktifkan: nama Black Textured Perfume hanya mendeskripsikan tampilan botol dan belum mengidentifikasi nama varian YSL yang tepat.',
   },
   {
     id: 'coach-blue-edt',
