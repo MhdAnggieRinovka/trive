@@ -30,4 +30,5 @@ export interface Product {
   closure?: string
   strap?: string
   color?: string
+  vapeType?: 'Device' | 'Liquid'
 }
