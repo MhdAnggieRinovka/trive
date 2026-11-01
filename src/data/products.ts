@@ -682,10 +682,16 @@ export const products: Product[] = [
     gender: 'Unisex',
     scentFamily: 'Citrus · Fruity · Amber',
     topNotes: ['Lemon', 'Calabrian bergamot', 'Sicilian orange'],
-    heartNotes: ['Mediterranean fruit accords'],
+    heartNotes: ['Mediterranean fruit'],
     baseNotes: ['Amber', 'Madagascar vanilla', 'White musk'],
     occasion: 'Harian hingga malam hari untuk penggemar aroma buah yang menonjol.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Xerjoff official', url: 'https://www.xerjoff.com/en-as/products/erba-pura-eau-de-parfum' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Xerjoff/Erba-Pura-55157.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Xerjoff/Erba_Pura' },
+    ],
     detailsSourceUrl: 'https://www.xerjoff.com/products/erba-pura-eau-de-parfum',
   },
   {
