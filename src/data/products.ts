@@ -1713,6 +1713,12 @@ export const products: Product[] = [
     gender: 'Wanita',
     scentFamily: 'Floral',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Zara official', url: 'https://www.zara.com/id/id/peony-edp-90-ml--3-04-fl--oz---p20120831.html' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Zara/Peony-73795.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Zara/peony-zara-bloom-04-peony' },
+    ],
   }
 ,
   {
@@ -1729,9 +1735,9 @@ export const products: Product[] = [
     concentration: 'Eau de Toilette (EDT)',
     gender: 'Wanita',
     scentFamily: 'Fruity · Floral · Gourmand',
-    topNotes: ['Sour cherry', 'Raspberry', 'Mandarin orange', 'Daim'],
-    heartNotes: ['Marshmallow', 'Vanilla', 'Orchid', 'Gardenia'],
-    baseNotes: ['Sandalwood', 'Musk', 'White suede', 'Oak'],
+    topNotes: ['Pear', 'Black currant'],
+    heartNotes: ['Peony', 'Rose', 'Gardenia', 'Iris'],
+    baseNotes: ['Black vanilla husk', 'Tonka bean', 'Woody notes', 'Praline'],
     occasion: 'Siang hari, suasana santai, dan aktivitas bersama teman.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi ukuran dan varian produk fisik sebelum dipublikasikan.',
   },
