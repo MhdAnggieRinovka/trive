@@ -952,11 +952,17 @@ export const products: Product[] = [
     concentration: 'Belum dikonfirmasi',
     gender: 'Wanita',
     scentFamily: 'Fruity · Floral · Vanilla',
-    topNotes: ['Dragon fruit'],
-    heartNotes: ['Red peony', 'Red frangipani'],
-    baseNotes: ['Solar vanilla', 'Patchouli'],
+    topNotes: ["Pitaya","Pineapple","Yellow mandarin"],
+    heartNotes: ["Cherry peony","Red frangipani","Orange blossom","Jasmine sambac"],
+    baseNotes: ["Solar vanilla","Patchouli","Ambrofix","Tonka bean"],
     occasion: 'Malam hari, pesta, dan acara spesial.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Carolina Herrera official', url: 'https://www.carolinaherrera.com/us/en/p-fragrance/labomba?sku=000000000065195954' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Carolina-Herrera/La-Bomba-105931.html' },
+      { label: 'Sephora', url: 'https://www.sephora.com/product/la-bomba-eau-de-parfum-P520202' },
+    ],
   },
   {
     id: 'lattafa-yara-candy',
@@ -1350,8 +1356,17 @@ export const products: Product[] = [
     concentration: 'Eau de Parfum (EDP)',
     gender: 'Wanita',
     scentFamily: 'Soft · Floral · Sweet',
+    topNotes: ["Blackcurrant","Pink pepper"],
+    heartNotes: ["Hawthorn","Purple peony"],
+    baseNotes: ["Crème brûlée","Vanilla","Cedarwood"],
     occasion: 'Harian, suasana santai, dan penggunaan siang hari.',
     priceNote: 'Profil aroma disajikan secara umum; harga jual JADE DISTRICT belum ditentukan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Interparfums official', url: 'https://www.interparfumsinc.com/products/kate-spade-new-york-sparkle' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Kate-Spade/New-York-Sparkle-71667.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Kate_Spade/kate-spade-sparkle' },
+    ],
   },
   {
     id: 'hugo-boss-the-scent-for-her',
@@ -1591,6 +1606,12 @@ export const products: Product[] = [
     gender: 'Belum dikonfirmasi',
     scentFamily: 'Belum teridentifikasi',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Interparfums official', url: 'https://www.interparfumsinc.com/products/coach-eau-de-parfum' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Coach/Coach-the-Fragrance-38855.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Coach/Coach_2016_Eau_de_Parfum' },
+    ],
   },
   {
     id: 'marc-jacobs-daisy',
@@ -1607,6 +1628,12 @@ export const products: Product[] = [
     gender: 'Wanita',
     scentFamily: 'Fruity · Floral · Fresh',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Marc Jacobs official', url: 'https://www.marcjacobs.com/us-en/daisy-eau-de-toilette-100-ml/31655513034.html' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Marc-Jacobs/Daisy-1361.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Marc_Jacobs/Daisy' },
+    ],
   },
   {
     id: 'nishane-hacivat-extrait',
@@ -1797,6 +1824,12 @@ export const products: Product[] = [
     gender: 'Unisex',
     scentFamily: 'Vanilla · Powdery · Woody',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Matière Première official', url: 'https://matiere-premiere.com/en/products/vanilla-powder-extrait' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/matiere-premiere/vanilla-powder-extrait-de-parfum' },
+      { label: 'Harrods', url: 'https://www.harrods.com/en-id/p/matiere-premiere-vanilla-powder-extrait-de-parfum-100ml-000000000007890552' },
+    ],
   },
   {
     id: 'zara-violet-blossom',
