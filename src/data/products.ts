@@ -128,7 +128,15 @@ export const products: Product[] = [
     occasion: 'Harian, kantor, aktivitas santai, dan cuaca panas.',
     priceNote: 'Harga pembanding listing 125 ml; listing lain dapat lebih mahal atau lebih murah.',
     priceSourceUrl: 'https://www.blibli.com/p/parfum-pria-davidoff-coolwater-man-edt-125-ml/is--HAE-70463-02311-00001',
-    detailsSourceUrl: 'https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml',
+    detailsSourceUrl: 'https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml
+    topNotes: ['Peppermint', 'Lavender'],
+    heartNotes: ['Oakmoss', 'Geranium', 'Sandalwood'],
+    baseNotes: ['Amber', 'Musk'],
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Davidoff (brand)', url: 'https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Davidoff/cool-water-eau-de-toilette' },
+    ],',
   },
   {
     id: 'estee-lauder-pleasures',
@@ -150,7 +158,12 @@ export const products: Product[] = [
     occasion: 'Harian, siang hari, dan suasana yang menginginkan aroma floral bersih.',
     priceNote: 'Harga referensi listing online Indonesia; ukuran, seller, dan stok perlu dicek saat membeli.',
     priceSourceUrl: 'https://www.blibli.com/brand/estee',
-    detailsSourceUrl: 'https://www.esteelauder.com.hk/en-hk/product/571/2094/product-catalog/fragrance/estee-lauder-pleasures/eau-de-parfum-spray',
+    detailsSourceUrl: 'https://www.esteelauder.com.hk/en-hk/product/571/2094/product-catalog/fragrance/estee-lauder-pleasures/eau-de-parfum-spray
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Estée Lauder (brand)', url: 'https://www.esteelauder.com.hk/en-hk/product/571/2094/product-catalog/fragrance/estee-lauder-pleasures/eau-de-parfum-spray' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Estee_Lauder/Pleasures' },
+    ],',
   },
   {
     id: 'gucci-bloom',
@@ -241,7 +254,12 @@ export const products: Product[] = [
     occasion: 'Malam hari, acara formal, dan momen khusus.',
     priceNote: 'Harga awal dari listing brand di Sephora Indonesia; ukuran pada harga awal tidak berarti ukuran di visual.',
     priceSourceUrl: 'https://www.sephora.co.id/brands/tom-ford-beauty',
-    detailsSourceUrl: 'https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum',
+    detailsSourceUrl: 'https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'TOM FORD BEAUTY (brand)', url: 'https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Tom_Ford/Oud_Wood_Eau_de_Parfum' },
+    ],',
   },
   {
     id: 'kayali-fleur-majesty-rose-royale-31',
@@ -263,7 +281,13 @@ export const products: Product[] = [
     occasion: 'Sepanjang tahun; bisa dipakai sendiri atau dilayer dengan parfum lain.',
     priceNote: 'Harga listing brand Sephora Indonesia; ukuran dan ketersediaan dapat mengubah harga.',
     priceSourceUrl: 'https://www.sephora.co.id/brands/kayali',
-    detailsSourceUrl: 'https://us.kayali.com/products/fleur-majesty-rose-royale-31',
+    detailsSourceUrl: 'https://us.kayali.com/products/fleur-majesty-rose-royale-31
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'KAYALI (brand)', url: 'https://us.kayali.com/products/fleur-majesty-rose-royale-31' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Kayali-Fragrances/Fleur-Majesty-Rose-Royale-31-103558.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Kayali/fleur-majesty-rose-royale-31' },
+    ],',
   },
   {
     id: 'bvlgari-pour-homme',
@@ -325,7 +349,13 @@ export const products: Product[] = [
     occasion: 'Makan malam, kencan, dan acara malam.',
     priceNote: 'Harga pembanding 100 ml dari retailer Indonesia; bandingkan stok dan variasi seller.',
     priceSourceUrl: 'https://lensza.co.id/products/carolina-herrera-212-sexy-woman-100ml',
-    detailsSourceUrl: 'https://www.carolinaherrera.com/ww/en/p-fragrance/212-sexy',
+    detailsSourceUrl: 'https://www.carolinaherrera.com/ww/en/p-fragrance/212-sexy
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Carolina Herrera (brand)', url: 'https://www.carolinaherrera.com/ww/en/p-fragrance/212-sexy' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Carolina-Herrera/212-Sexy-306.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Carolina_Herrera/212_Sexy' },
+    ],',
   },
   {
     id: 'armaf-odyssey-limoni',
@@ -388,7 +418,13 @@ export const products: Product[] = [
     baseNotes: ['Creamy coconut accord'],
     occasion: 'Harian hingga malam hari untuk penggemar floral-fruity yang manis dan berani.',
     priceNote: 'Harga resmi YSL Beauty Indonesia untuk 90 ml; varian 30 ml tercantum dengan harga berbeda.',
-    priceSourceUrl: 'https://www.yslbeauty.co.id/in_ID/parfum/libre-berry-crush/WW-51508YSL.html',
+    priceSourceUrl: 'https://www.yslbeauty.co.id/in_ID/parfum/libre-berry-crush/WW-51508YSL.html
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'YSL Beauty (brand)', url: 'https://www.yslbeauty.co.id/in_ID/parfum/libre-berry-crush/WW-51508YSL.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Yves_Saint_Laurent/libre-berry-crush' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-Berry-Crush-111201.html' },
+    ],',
     detailsSourceUrl: 'https://www.yslbeauty.co.id/in_ID/parfum/libre-berry-crush/WW-51508YSL.html',
   },
   {
@@ -433,7 +469,13 @@ export const products: Product[] = [
     baseNotes: ['Musk', 'Orange', 'Amber'],
     occasion: 'Aktivitas harian, siang hari, dan suasana santai.',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan.',
-    detailsSourceUrl: 'https://afnan.com/products/9-am-pour-femme',
+    detailsSourceUrl: 'https://afnan.com/products/9-am-pour-femme
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Afnan (brand)', url: 'https://afnan.com/products/9-am-pour-femme' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/afnan/9am-pour-femme-78541.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Afnan_Perfumes/9am-pour-femme' },
+    ],',
   },
   {
     id: 'acqua-di-gio-profumo',
