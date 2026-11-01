@@ -45,15 +45,16 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'auto' })
   }
 
+  const availableProducts = products.filter((product) => product.category !== 'Tas')
   const productRoute = pathname.match(/^\/(parfum|tas|vape)\/([^/]+)$/)
   const selectedProduct = productRoute
-    ? products.find((product) => product.id === productRoute[2] && product.category.toLowerCase() === productRoute[1])
+    ? availableProducts.find((product) => product.id === productRoute[2] && product.category.toLowerCase() === productRoute[1])
     : undefined
 
   let page: ReactNode
 
   if (pathname === '/') {
-    page = <HomePage featuredProducts={products.slice(0, 4)} totalProducts={products.length} onNavigate={navigate} />
+    page = <HomePage featuredProducts={availableProducts.slice(0, 4)} totalProducts={availableProducts.length} onNavigate={navigate} />
   } else if (pathname === '/about') {
     page = <AboutPage onNavigate={navigate} />
   } else if (pathname === '/contact') {
@@ -75,7 +76,7 @@ function App() {
               ? 'Temukan tas yang melengkapi gaya dan aktivitas sehari-hari.'
               : 'Koleksi kategori ini akan ditampilkan saat produk tersedia.'}
         category={currentCategory}
-        products={products}
+        products={availableProducts}
         search={search}
         sort={sort}
         layout={layout}
