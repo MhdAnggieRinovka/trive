@@ -1490,6 +1490,12 @@ export const products: Product[] = [
     gender: 'Unisex',
     scentFamily: 'Citrus · Woody · Chypre',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Nishane official', url: 'https://nishane.com/product/hacivat/' },
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Nishane/Hacivat-44174.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Nishane/Hacivat' },
+    ],
   },
   {
     id: 'clinique-happy-for-men',
@@ -1506,6 +1512,12 @@ export const products: Product[] = [
     gender: 'Pria',
     scentFamily: 'Citrus · Aromatic · Fresh',
     priceNote: 'Harga jual JADE DISTRICT belum ditentukan; verifikasi varian dan ukuran produk fisik sebelum dipublikasikan.',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Fragrantica', url: 'https://www.fragrantica.com/perfume/Clinique/Clinique-Happy-For-Men-373.html' },
+      { label: 'Osmoz', url: 'https://www.osmoz.com/perfumes/clinique/5018/happy-for-men' },
+      { label: 'Scento', url: 'https://www.scento.com/perfume-database/perfumes/clinique-happy-for-men' },
+    ],
   },
   {
     id: 'dolce-gabbana-light-blue',
