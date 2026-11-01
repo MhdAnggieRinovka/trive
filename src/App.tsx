@@ -69,7 +69,7 @@ function App() {
         title={isAllProducts ? 'Semua' : currentCategory === 'Parfum' ? 'Aroma' : currentCategory === 'Tas' ? 'Teman gaya' : 'Pilihan'}
         titleEmphasis={isAllProducts ? 'pilihan' : currentCategory === 'Parfum' ? 'berkarakter.' : currentCategory === 'Tas' ? 'harian.' : 'vape.'}
         intro={isAllProducts
-          ? 'Jelajahi semua pilihan lifestyle yang sedang dikurasi oleh TRIVE.'
+          ? 'Jelajahi semua pilihan lifestyle yang sedang dikurasi oleh JADE DISTRICT.'
           : currentCategory === 'Parfum'
             ? 'Kenali karakter aroma dari yang segar dan ringan hingga hangat dan berlapis.'
             : currentCategory === 'Tas'
