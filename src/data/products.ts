@@ -78,7 +78,7 @@ export const products: Product[] = [
     baseNotes: ['Vetiver', 'Bourbon vanilla', 'Amber'],
     occasion: 'Malam hari, acara khusus, dan penggunaan saat cuaca sejuk.',
     priceNote: 'Estimasi awal untuk pasar Indonesia; belum ditemukan listing lokal yang cukup sebanding dalam riset ini. Verifikasi harga/varian sebelum dipublikasikan.',
-    detailsSourceUrl: 'https://lattafa.com/product/asad-bourbon/',
+    detailsSourceUrl: 'https://lattafa.com/product/lattafa-gift-set-asad-bourbon-100ml-12ml-shower-gel/',
     aromaVerified: true,
     aromaSources: [
       { label: 'Lattafa (brand)', url: 'https://lattafa.com/product/asad-bourbon/' },
