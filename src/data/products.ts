@@ -193,6 +193,11 @@ export const products: Product[] = [
     priceNote: 'Harga awal yang tercantum pada halaman brand Sephora Indonesia; cek ukuran yang dipilih.',
     priceSourceUrl: 'https://www.sephora.co.id/brands/givenchy',
     detailsSourceUrl: 'https://www.givenchybeauty.com/int/en/p/irresistible-P036173.html',
+    aromaVerified: true,
+    aromaSources: [
+      { label: 'Givenchy Beauty', url: 'https://www.givenchybeauty.com/int/en/p/irresistible-P036173.html' },
+      { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Givenchy/irresistible-givenchy-eau-de-parfum' },
+    ],
   },
   {
     id: 'lattafa-fakhar-gold-extrait',
