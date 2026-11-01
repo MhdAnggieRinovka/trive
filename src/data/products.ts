@@ -457,7 +457,7 @@ export const products: Product[] = [
       { label: 'Fragrantica News', url: 'https://www.fragrantica.com/news/Yves-Saint-Laurent-Libre-Berry-Crush-23986.html' },
       { label: 'Parfumo', url: 'https://www.parfumo.com/Perfumes/Yves_Saint_Laurent/libre-berry-crush' },
     ],
-    priceSourceUrl: 'https://www.yslbeauty.co.id/in_ID/parfum/libre-berry-crush/WW-51508YSL.html
+    priceSourceUrl: 'https://www.yslbeauty.co.id/in_ID/parfum/libre-berry-crush/WW-51508YSL.html',
     detailsSourceUrl: 'https://www.yslbeauty.co.id/in_ID/parfum/libre-berry-crush/WW-51508YSL.html',
   },
   {
