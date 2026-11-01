@@ -51,6 +51,7 @@ export const products: Product[] = [
     priceNote: 'Harga pembanding untuk 100 ml dari retailer; halaman sumber saat riset menampilkan stok tidak tersedia.',
     priceSourceUrl: 'https://www.lamaisonduparfum.com/en-id/products/interlude-man-1',
     detailsSourceUrl: 'https://amouage.com/products/interlude-man-100ml',
+    aromaVerified: true,
   },
   {
     id: 'lattafa-asad-bourbon',
