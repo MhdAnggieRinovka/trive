@@ -1,4 +1,5 @@
 import type { Product } from '../types/product'
+import { getWhatsAppUrl } from '../config/contact'
 
 interface ProductDetailPageProps {
   product: Product
@@ -64,6 +65,11 @@ export function ProductDetailPage({ product, onNavigate }: ProductDetailPageProp
             {product.detailsSourceUrl && <a href={product.detailsSourceUrl} target="_blank" rel="noreferrer">{product.category === 'Tas' ? 'Detail produk ↗' : 'Detail aroma ↗'}</a>}
             {product.priceSourceUrl && <a href={product.priceSourceUrl} target="_blank" rel="noreferrer">Referensi harga ↗</a>}
           </div>
+          {(product.category === 'Parfum' || product.category === 'Vape') && (
+            <a className={'button button-whatsapp' + (getWhatsAppUrl(product) ? '' : ' button-disabled')} href={getWhatsAppUrl(product) ?? undefined} target={getWhatsAppUrl(product) ? '_blank' : undefined} rel={getWhatsAppUrl(product) ? 'noreferrer' : undefined} aria-disabled={!getWhatsAppUrl(product)}>
+              <span aria-hidden="true">◉</span> {getWhatsAppUrl(product) ? 'Tanyakan via WhatsApp' : 'WhatsApp segera tersedia'} <span>↗</span>
+            </a>
+          )}
           <div className="detail-note"><span>✳</span><p>Gambar katalog merupakan visual AI, bukan foto barang aktual. Verifikasi model, bahan, ukuran, kondisi, keaslian, dan harga barang sebelum dipublikasikan.</p></div>
           <button className="button button-dark product-detail-back" onClick={() => onNavigate(`/${product.category.toLowerCase()}`)}>Kembali ke {product.category.toLowerCase()} <span>↗</span></button>
         </article>
