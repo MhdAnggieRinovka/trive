@@ -20,12 +20,17 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
         { label: 'Tali', value: product.strap ?? 'Belum dikonfirmasi' },
         { label: 'Warna', value: product.color ?? 'Belum dirinci' },
       ]
-    : [
-        { label: 'Isi / ukuran', value: product.volume ?? 'Belum dikonfirmasi' },
-        { label: 'Konsentrasi', value: product.concentration ?? 'Belum dikonfirmasi' },
-        { label: 'Karakter aroma', value: product.scentFamily ?? 'Belum dirinci' },
-        { label: 'Kategori pemakaian', value: product.gender ?? 'Belum dirinci' },
-      ]
+    : product.category === 'Vape'
+      ? [
+          { label: 'Jenis', value: product.vapeType ?? 'Belum ditentukan' },
+          { label: 'Warna / varian', value: product.color ?? 'Belum dikonfirmasi' },
+        ]
+      : [
+          { label: 'Isi / ukuran', value: product.volume ?? 'Belum dikonfirmasi' },
+          { label: 'Konsentrasi', value: product.concentration ?? 'Belum dikonfirmasi' },
+          { label: 'Karakter aroma', value: product.scentFamily ?? 'Belum dirinci' },
+          { label: 'Kategori pemakaian', value: product.gender ?? 'Belum dirinci' },
+        ]
 
   return (
     <div className="modal-backdrop" role="presentation" onClick={onClose}>
@@ -70,7 +75,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
             {product.priceSourceUrl && <a href={product.priceSourceUrl} target="_blank" rel="noreferrer">Referensi harga ↗</a>}
           </div>
 
-          <div className="detail-note"><span>✳</span><p>Gambar katalog merupakan visual AI, bukan foto barang aktual. Verifikasi model, bahan, ukuran, kondisi, keaslian, dan harga barang sebelum dipublikasikan.</p></div>
+          <div className="detail-note"><span>✳</span><p>{product.category === 'Vape' ? 'Foto varian berasal dari gambar produk yang diberikan. Informasi teknis, kelengkapan, kondisi, dan ketersediaan perlu dikonfirmasi.' : 'Gambar katalog merupakan visual AI, bukan foto barang aktual. Verifikasi model, bahan, ukuran, kondisi, keaslian, dan harga barang sebelum dipublikasikan.'}</p></div>
           <button className="button button-dark modal-done" onClick={onClose}>Kembali ke koleksi <span>↗</span></button>
         </div>
       </section>
