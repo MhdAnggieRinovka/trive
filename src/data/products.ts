@@ -2038,7 +2038,6 @@ export const products: Product[] = [
     ],
     aromaNoteList: ["Centifolia rose absolute","Bulgarian rose","Oud wood","Ambergris","Black pepper","Saffron"],
   },
-,
   {
     id: 'oumier-wasp-nano-x-v2-sunset-pink',
     name: 'Wasp Nano X V2 Sunset Pink',
