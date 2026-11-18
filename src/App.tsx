@@ -56,7 +56,22 @@ function App() {
 
   let page: ReactNode
 
-  if (pathname === '/') {
+  if (pathname === '/' && search.trim()) {
+    page = (
+      <CollectionPage
+        title="Hasil"
+        titleEmphasis="pencarian."
+        intro={`Menampilkan produk yang cocok dengan kata kunci “${search.trim()}”.`}
+        products={availableProducts}
+        search={search}
+        sort={sort}
+        layout={layout}
+        onSortChange={setSort}
+        onLayoutChange={setLayout}
+        onNavigate={navigate}
+      />
+    )
+  } else if (pathname === '/') {
     page = <HomePage featuredProducts={availableProducts.slice(0, 4)} totalProducts={availableProducts.length} onNavigate={navigate} />
   } else if (pathname === '/about') {
     page = <AboutPage onNavigate={navigate} />
