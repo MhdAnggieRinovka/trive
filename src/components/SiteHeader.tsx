@@ -19,6 +19,7 @@ const navItems: { label: string; path: string }[] = [
 
 export function SiteHeader({ currentPath, dark, search, onNavigate, onToggleTheme, onSearchChange }: SiteHeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [mobileSearchOpen, setMobileSearchOpen] = useState(false)
   const activeCategory = currentPath.split('/')[1]
   const isAbout = currentPath === '/about'
   const isHome = currentPath === '/'
@@ -27,6 +28,7 @@ export function SiteHeader({ currentPath, dark, search, onNavigate, onToggleThem
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return
     event.preventDefault()
     setMenuOpen(false)
+    setMobileSearchOpen(false)
     onNavigate(path)
   }
 
@@ -62,13 +64,41 @@ export function SiteHeader({ currentPath, dark, search, onNavigate, onToggleThem
           })}
         </nav>
         <div className="header-actions">
-          <label className="search-box">
+          <label className="search-box desktop-search-box">
             <span aria-hidden="true">⌕</span>
             <input aria-label="Cari produk" placeholder="Cari produk" value={search} onChange={(event) => onSearchChange(event.target.value)} />
           </label>
+          <button
+            className="icon-button mobile-search-toggle"
+            onClick={() => setMobileSearchOpen((open) => !open)}
+            aria-label={mobileSearchOpen ? 'Tutup pencarian' : 'Buka pencarian'}
+            aria-expanded={mobileSearchOpen}
+            title="Cari produk"
+          >
+            {mobileSearchOpen ? '×' : '⌕'}
+          </button>
           <button className="icon-button theme-toggle" onClick={onToggleTheme} aria-label={dark ? 'Aktifkan tema terang' : 'Aktifkan tema gelap'} title={dark ? 'Tema terang' : 'Tema gelap'}>{dark ? '☼' : '☾'}</button>
         </div>
       </header>
+      {mobileSearchOpen && (
+        <div className="mobile-search-panel">
+          <label className="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input
+              autoFocus
+              aria-label="Cari produk"
+              placeholder="Cari nama produk, brand, atau kategori..."
+              value={search}
+              onChange={(event) => onSearchChange(event.target.value)}
+            />
+          </label>
+          {search && (
+            <button className="mobile-search-clear" onClick={() => onSearchChange('')} aria-label="Hapus pencarian">
+              Hapus
+            </button>
+          )}
+        </div>
+      )}
     </>
   )
 }
